@@ -16,8 +16,8 @@
   "esmodules": [],
   "packs": [],
   "url": "https://github.com/DKSEN404/nova-red-ui",
-  "manifest": "https://github.com/DKSEN404/nova-red-ui/releases/latest/download/module.json",
-  "download": "https://github.com/DKSEN404/nova-red-ui/releases/latest/download/module.zip",
+  "manifest": "https://github.com/DKSEN404/nova-red-ui/releases/download/v1.0.1/module.json",
+  "download": "https://github.com/DKSEN404/nova-red-ui/releases/download/v1.0.1/module.zip",
   "compatibility": {
     "minimum": 12,
     "verified": 12,
