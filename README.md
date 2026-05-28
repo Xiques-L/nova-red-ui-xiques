@@ -1,51 +1,58 @@
+```text
+╔══════════════════════════════════════════════════════════╗
+║        █▄▄▄ █ █ ▄▀▄ ▄▀▄   █▀▄▄▀█ ██ █ █▀▄             ║
+║        █▄▄  █▄█ ▀▄▀ ▀▄▀   █ ▀▀ █ █▄█ █ █▀              ║
+║                                                          ║
+║    █▀▄▀█ █▀▀█ █▀▀  █ █   █▀▀ █▀▀█ █▀▀  █▀▀█            ║
+║    █ ▀ █ █▄▄█ ▀▀█  █▄█   █   █▄▄█ ▀▀█  █▄▄█            ║
+║    ▀   ▀ ▀  ▀ ▀▀▀  ▄▀▄   ▀▀▀ ▀  ▀ ▀▀▀  ▀  ▀            ║
+╚══════════════════════════════════════════════════════════╝
+```
+
 # Nova Red UI
-Tema ámbar sobre negro para Cyberpunk RED Core con estética terminal Nova Red.
 
-Basado en el módulo original **scifi-ui** creado por **iotech** para Foundry VTT.
+> **Tema ámbar sobre negro para Cyberpunk RED Core (Foundry VTT).**  
+> Glass interface, layout vertical, estética terminal Nova Red.
 
+---
 
-Credits/License
-This entire work (except graphics) is CC BY 4.0
-https://creativecommons.org/licenses/by/4.0/
+## Instalación
 
-Tab Icons
+Agrega este manifiesto en Foundry VTT:
 
-Scenes		Rexard 7000 Icons Bundle (licensed)
+```
+https://github.com/DKSEN404/nova-red-ui/releases/latest/download/module.json
+```
 
-Items		Rexard 7000 Icons Bundle (licensed)
+**Módulo:** `Sistema → Módulos → Instalar módulo → Pegar URL del manifiesto`
 
-Journals		Rexard 7000 Icons Bundle (licensed)
+---
 
-Tables		CC BY Font Awesome via Wikimedia Commons https://commons.wikimedia.org/wiki/File:Font_Awesome_5_solid_dice.svg
+## Características
 
-Music		Rexard 7000 Icons Bundle (licensed)
+- **Glass Interface** — Ventanas, sidebar y paneles con transparencia y blur(4px)
+- **Layout Vertical** — Hojas de personaje y mook con navegación por pestañas laterales
+- **Override completo** — Variables CSS `--cpr-*` sobrescritas — funciona sin modificar el sistema
+- **Templates propios** — 7 templates Handlebars que reemplazan los del sistema vía `registerPartial`
+- **100% CSS/JS** — Sin imágenes externas, sin dependencias adicionales
+- **Compatible** — Foundry VTT v12, Cyberpunk RED Core v0.92.4+
 
-Compendiums		Rexard 7000 Icons Bundle (licensed)
+---
 
-Combat		Rexard 7000 Icons Bundle (licensed)
+## Preview
 
-Actors		Rexard 7000 Icons Bundle (licensed)
+| Componente | Efecto |
+|-----------|--------|
+| Ventanas de actor (personaje y mook) | Layout vertical + glass |
+| Hojas de item, diálogos, journal | Transparencia + blur |
+| Sidebar, paneles internos, chat | Fondo semitransparente |
+| Inputs, botones, selects | Fondo sólido (usabilidad) |
 
-Settings		Rexard 7000 Icons Bundle (licensed)
-
-Chat bubble		CC BY Adapted from https://commons.wikimedia.org/wiki/File:Chat-bubble_(CoreUI_Icons_v1.0.0).svg
-
-
-Other images
-
-Sibebar frame		Original by iotech
-
-Left arrow		CC BY SA https://commons.wikimedia.org/wiki/File:Left_arrow_Hexagonal_Icon.svg
-
-Right arrow		CC BY SA https://commons.wikimedia.org/wiki/File:Right_arrow_Hexagonal_Icon.svg
-
-Buttons		by imacat Public Domain https://opengameart.org/content/buttons-sci-fi
-
-Denim075    by Atropos (FoundryVTT)
+---
 
 ## Changelog
 
-### v1.0.2 — Vertical Layout y Theme Override (2026-05-28)
+### v1.0.2 — Vertical Layout y Theme Override *(2026-05-28)*
 - Nuevo layout vertical para hojas de personaje (`.character-vertical`) y mook (`.mook-sheet-vertical`)
 - 7 templates propios del módulo para independencia del sistema:
   - `cpr-character-sheet.hbs`, `cpr-mook-sheet.hbs`
@@ -53,14 +60,33 @@ Denim075    by Atropos (FoundryVTT)
   - `mook/cpr-mook-tab1.hbs`, `cpr-mook-tab2.hbs`
 - Override completo de variables CSS `--cpr-*` para tema ámbar/negro sin modificar el sistema
 - Patrón de cuadrícula cyberpunk en fondo (`html[data-cpr-theme="default"]`)
-- Registro de partials vía Handlebars.registerPartial para que funcione en instalaciones limpias
+- Registro de partials vía `Handlebars.registerPartial` para instalaciones limpias
 - Monkey-patch de sheet templates para usar las plantillas del módulo
 - Compatibilidad 100% con Foundry VTT v12 sin dependencias externas
 
-### v1.0.1 — Glass Interface (2026-05-28)
+### v1.0.1 — Glass Interface *(2026-05-28)*
 - Efecto glass/transparencia con `backdrop-filter: blur(4px)` en todas las ventanas del sistema
 - Sidebar, ventanas de actor, hojas de item, diálogos, journal, notificaciones, chat tooltips
 - 4 variables CSS personalizables: `--nv-glass-{deep,dark,mid,light}`
 - Elementos interactivos (inputs, botones, selects) mantienen fondo sólido para usabilidad
-- Compatibilidad 100% con Foundry VTT v12
 - Código limpio: solo CSS, sin JS adicional, sin imágenes
+
+---
+
+## Créditos
+
+| Recurso | Fuente |
+|---------|--------|
+| Módulo original | **scifi-ui** por iotech |
+| Tab Icons | Rexard 7000 Icons Bundle (licenciado) |
+| Tablas | Font Awesome vía Wikimedia Commons (CC BY) |
+| Chat bubble | Adaptado de CoreUI Icons (CC BY) |
+| Sidebar frame | Original por iotech |
+| Flechas izq/der | Hexagonal Icon (CC BY SA) |
+| Botones | imacat — Public Domain (OpenGameArt) |
+| Denim075 | Atropos (FoundryVTT) |
+
+## Licencia
+
+Este trabajo (excepto gráficos) está bajo **CC BY 4.0**.  
+https://creativecommons.org/licenses/by/4.0/
