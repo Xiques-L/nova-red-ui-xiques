@@ -16,32 +16,34 @@
 ![Cyberpunk RED](https://img.shields.io/badge/Cyberpunk_RED-ff0000?style=flat-square)
 ![CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-313131?style=flat-square)
 
+> **🌐 English** · [Español](README.es.md)
+
 # Nova Red UI
 
-> **Tema ámbar sobre negro para Cyberpunk RED Core (Foundry VTT).**  
-> Glass interface, layout vertical, estética terminal Nova Red.
+> **Amber-on-black theme for Cyberpunk RED Core (Foundry VTT).**  
+> Glass interface, vertical layout, Nova Red terminal aesthetic.
 
 ---
 
-## Instalación
+## Installation
 
-Agrega este manifiesto en Foundry VTT:
+Add this manifest URL in Foundry VTT:
 
 ```
 https://github.com/DKSEN404/nova-red-ui/releases/latest/download/module.json
 ```
 
-**Módulo:** `Sistema → Módulos → Instalar módulo → Pegar URL del manifiesto`
+**Module:** `System → Modules → Install Module → Paste manifest URL`
 
 ---
 
-## Características
+## Features
 
-- **Glass Interface** — Ventanas, sidebar y paneles con transparencia y blur(4px)
-- **Layout Vertical** — Hojas de personaje y mook con navegación por pestañas laterales
-- **Override completo** — Variables CSS `--cpr-*` sobrescritas — funciona sin modificar el sistema
-- **Templates propios** — 7 templates Handlebars que reemplazan los del sistema vía `registerPartial`
-- **100% CSS/JS** — Sin imágenes externas, sin dependencias adicionales
+- **Glass Interface** — Windows, sidebar, and panels with transparency and blur(4px)
+- **Vertical Layout** — Character and mook sheets with side-tab navigation
+- **Full Override** — CSS `--cpr-*` variables overwritten — works without modifying the system
+- **Custom Templates** — 7 Handlebars templates replacing system ones via `registerPartial`
+- **100% CSS/JS** — No external images, no additional dependencies
 - **Compatible** — Foundry VTT v12, Cyberpunk RED Core v0.92.4+
 
 ---
@@ -57,56 +59,56 @@ https://github.com/DKSEN404/nova-red-ui/releases/latest/download/module.json
 
 ## Changelog
 
-### v1.0.4 — Theme-Neutral: Modo Camaleón *(2026-05-28)*
-- **Modo Camaleón** — el módulo ya no fuerza el tema ámbar, se adapta al color del tema del usuario
-- Eliminadas todas las declaraciones `--cpr-*` del `:root` que pisaban el tema del sistema
-- Variables `--nv-accent`, `--nv-border`, `--nv-bg-*`, `--nv-text-*` que referencian las variables `--cpr-*` del sistema
-- Glows y sombras se adaptan al tema via `color-mix()` con fallback ámbar para navegadores antiguos
-- 521+ colores hardcodeados reemplazados por referencias a variables CSS
-- Compatibilidad: temas ámbar, azul, verde, rojo — cualquier color funciona automáticamente
+### v1.0.4 — Theme-Neutral: Chameleon Mode *(2026-05-28)*
+- **Chameleon Mode** — module no longer forces the amber theme, adapts to the user's theme color
+- Removed all `--cpr-*` declarations from `:root` that were overriding the system theme
+- `--nv-accent`, `--nv-border`, `--nv-bg-*`, `--nv-text-*` variables referencing the system's `--cpr-*` variables
+- Glows and shadows adapt to theme via `color-mix()` with amber fallback for legacy browsers
+- 521+ hardcoded colors replaced with CSS variable references
+- Compatible with amber, blue, green, red themes — any color works automatically
 
-### v1.0.3 — Glass Effect en Layout Vertical *(2026-05-28)*
-- Efecto glass/transparencia completo en layout vertical de personaje y mook
-- Cobertura total: `.character-vertical`, `.mook-sheet-vertical`, `.sheet-vertical`, `.profile-header`, `.stats-bar`, `.mook-header`, `.navtabs-side`, tab-content, skills, combat, equipment, notes
-- `backdrop-filter: blur(4px)` en contenedores principales del layout vertical
-- Variables `--nv-glass-*` aplicadas a todos los paneles internos del layout vertical
-- Inputs, selects y botones mantienen fondo sólido para usabilidad
+### v1.0.3 — Glass Effect in Vertical Layout *(2026-05-28)*
+- Full glass/transparency effect in character and mook vertical layout
+- Complete coverage: `.character-vertical`, `.mook-sheet-vertical`, `.sheet-vertical`, `.profile-header`, `.stats-bar`, `.mook-header`, `.navtabs-side`, tab-content, skills, combat, equipment, notes
+- `backdrop-filter: blur(4px)` on main vertical layout containers
+- `--nv-glass-*` variables applied to all inner panels of the vertical layout
+- Inputs, selects, and buttons keep solid background for usability
 
-### v1.0.2 — Vertical Layout y Theme Override *(2026-05-28)*
-- Nuevo layout vertical para hojas de personaje (`.character-vertical`) y mook (`.mook-sheet-vertical`)
-- 7 templates propios del módulo para independencia del sistema:
+### v1.0.2 — Vertical Layout & Theme Override *(2026-05-28)*
+- New vertical layout for character (`.character-vertical`) and mook (`.mook-sheet-vertical`) sheets
+- 7 custom module templates for system independence:
   - `cpr-character-sheet.hbs`, `cpr-mook-sheet.hbs`
   - `character/cpr-sheet-header.hbs`, `cpr-profile-tab.hbs`, `cpr-rolefight-tab.hbs`
   - `mook/cpr-mook-tab1.hbs`, `cpr-mook-tab2.hbs`
-- Override completo de variables CSS `--cpr-*` para tema ámbar/negro sin modificar el sistema
-- Patrón de cuadrícula cyberpunk en fondo (`html[data-cpr-theme="default"]`)
-- Registro de partials vía `Handlebars.registerPartial` para instalaciones limpias
-- Monkey-patch de sheet templates para usar las plantillas del módulo
-- Compatibilidad 100% con Foundry VTT v12 sin dependencias externas
+- Full CSS `--cpr-*` variable override for amber/black theme without modifying the system
+- Cyberpunk grid pattern background (`html[data-cpr-theme="default"]`)
+- Partial registration via `Handlebars.registerPartial` for clean installations
+- Monkey-patch of sheet templates to use the module's templates
+- 100% compatibility with Foundry VTT v12, no external dependencies
 
 ### v1.0.1 — Glass Interface *(2026-05-28)*
-- Efecto glass/transparencia con `backdrop-filter: blur(4px)` en todas las ventanas del sistema
-- Sidebar, ventanas de actor, hojas de item, diálogos, journal, notificaciones, chat tooltips
-- 4 variables CSS personalizables: `--nv-glass-{deep,dark,mid,light}`
-- Elementos interactivos (inputs, botones, selects) mantienen fondo sólido para usabilidad
-- Código limpio: solo CSS, sin JS adicional, sin imágenes
+- Glass/transparency effect with `backdrop-filter: blur(4px)` on all system windows
+- Sidebar, actor sheets, item sheets, dialogs, journal, notifications, chat tooltips
+- 4 customizable CSS variables: `--nv-glass-{deep,dark,mid,light}`
+- Interactive elements (inputs, buttons, selects) keep solid background for usability
+- Clean code: CSS only, no extra JS, no images
 
 ---
 
-## Créditos
+## Credits
 
-| Recurso | Fuente |
-|---------|--------|
-| Módulo original | **scifi-ui** por iotech |
-| Tab Icons | Rexard 7000 Icons Bundle (licenciado) |
-| Tablas | Font Awesome vía Wikimedia Commons (CC BY) |
-| Chat bubble | Adaptado de CoreUI Icons (CC BY) |
-| Sidebar frame | Original por iotech |
-| Flechas izq/der | Hexagonal Icon (CC BY SA) |
-| Botones | imacat — Public Domain (OpenGameArt) |
+| Resource | Source |
+|----------|--------|
+| Original module | **scifi-ui** by iotech |
+| Tab Icons | Rexard 7000 Icons Bundle (licensed) |
+| Tables | Font Awesome via Wikimedia Commons (CC BY) |
+| Chat bubble | Adapted from CoreUI Icons (CC BY) |
+| Sidebar frame | Original by iotech |
+| Left/Right arrows | Hexagonal Icon (CC BY SA) |
+| Buttons | imacat — Public Domain (OpenGameArt) |
 | Denim075 | Atropos (FoundryVTT) |
 
-## Licencia
+## License
 
-Este trabajo (excepto gráficos) está bajo **CC BY 4.0**.  
+This work (except graphics) is licensed under **CC BY 4.0**.  
 https://creativecommons.org/licenses/by/4.0/
