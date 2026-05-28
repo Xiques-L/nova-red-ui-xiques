@@ -9,6 +9,13 @@
 ╚══════════════════════════════════════════════════════════╝
 ```
 
+![Foundry VTT v12](https://img.shields.io/badge/Foundry_VTT-v12-amber?style=flat-square&logo=foundryvirtualtabletop&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Handlebars](https://img.shields.io/badge/Handlebars.js-000000?style=flat-square&logo=handlebarsdotjs&logoColor=white)
+![Cyberpunk RED](https://img.shields.io/badge/Cyberpunk_RED-ff0000?style=flat-square)
+![CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-313131?style=flat-square)
+
 # Nova Red UI
 
 > **Tema ámbar sobre negro para Cyberpunk RED Core (Foundry VTT).**  
@@ -41,12 +48,10 @@ https://github.com/DKSEN404/nova-red-ui/releases/latest/download/module.json
 
 ## Preview
 
-| Componente | Efecto |
-|-----------|--------|
-| Ventanas de actor (personaje y mook) | Layout vertical + glass |
-| Hojas de item, diálogos, journal | Transparencia + blur |
-| Sidebar, paneles internos, chat | Fondo semitransparente |
-| Inputs, botones, selects | Fondo sólido (usabilidad) |
+| | |
+|:---:|:---:|
+| ![Preview](./previo/ss1.png) | ![Preview](./previo/ss2.png) |
+| ![Preview](./previo/ss3.png) | ![Preview](./previo/ss4.png) |
 
 ---
 
