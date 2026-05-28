@@ -52,6 +52,13 @@ https://github.com/DKSEN404/nova-red-ui/releases/latest/download/module.json
 
 ## Changelog
 
+### v1.0.3 — Glass Effect en Layout Vertical *(2026-05-28)*
+- Efecto glass/transparencia completo en layout vertical de personaje y mook
+- Cobertura total: `.character-vertical`, `.mook-sheet-vertical`, `.sheet-vertical`, `.profile-header`, `.stats-bar`, `.mook-header`, `.navtabs-side`, tab-content, skills, combat, equipment, notes
+- `backdrop-filter: blur(4px)` en contenedores principales del layout vertical
+- Variables `--nv-glass-*` aplicadas a todos los paneles internos del layout vertical
+- Inputs, selects y botones mantienen fondo sólido para usabilidad
+
 ### v1.0.2 — Vertical Layout y Theme Override *(2026-05-28)*
 - Nuevo layout vertical para hojas de personaje (`.character-vertical`) y mook (`.mook-sheet-vertical`)
 - 7 templates propios del módulo para independencia del sistema:
