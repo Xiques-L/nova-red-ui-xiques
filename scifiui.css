@@ -12,16 +12,16 @@
 
   --cpr-font-primary: "Tektur", monospace;
 
-  --nv-accent:        var(--cpr-color-white, #ffb000);
-  --nv-accent-dim:    var(--cpr-color-pink, #ff8c00);
-  --nv-accent-bright: var(--cpr-text-foundry-hover, #ffcc00);
-  --nv-border:        var(--cpr-color-dark-grey, #332200);
+  --nv-accent:        var(--cpr-color-white, #f3e600);
+  --nv-accent-dim:    var(--cpr-color-pink, #ff0080);
+  --nv-accent-bright: var(--cpr-text-foundry-hover, #ffff00);
+  --nv-border:        var(--cpr-color-dark-grey, #1a1a00);
   --nv-bg-input:      var(--cpr-background-foundry-input, #0d0d0d);
-  --nv-bg-dark:       var(--cpr-background-pill, #1a1a00);
+  --nv-bg-dark:       var(--cpr-background-pill, #0f0f1a);
   --nv-bg-nearblack:  var(--cpr-color-near-black, #0a0a0a);
   --nv-bg-offblack:   var(--cpr-color-off-black, #050505);
-  --nv-text-dimmed:   var(--cpr-color-medium-grey, #554400);
-  --nv-text-hint:     var(--cpr-text-foundry-hint, #aa7700);
+  --nv-text-dimmed:   var(--cpr-color-medium-grey, #664400);
+  --nv-text-hint:     var(--cpr-text-foundry-hint, #aa8800);
   --nv-text-black:    var(--cpr-text-tab-highlight, #000000);
 
   --nv-color-success: var(--cpr-text-chat-success, #00ffaa);
@@ -44,8 +44,8 @@
 
 html[data-cpr-theme="default"] {
   background-image:
-    linear-gradient(var(--nv-glow-003, rgba(255, 176, 0, 0.03)) 1px, transparent 1px),
-    linear-gradient(90deg, var(--nv-glow-003, rgba(255, 176, 0, 0.03)) 1px, transparent 1px);
+    linear-gradient(var(--nv-glow-003, rgba(243, 230, 0, 0.03)) 1px, transparent 1px),
+    linear-gradient(90deg, var(--nv-glow-003, rgba(243, 230, 0, 0.03)) 1px, transparent 1px);
   background-image:
     linear-gradient(var(--nv-glow-003) 1px, transparent 1px),
     linear-gradient(90deg, var(--nv-glow-003) 1px, transparent 1px);
@@ -89,7 +89,7 @@ input:hover, select:hover, button:hover {
 
 input:focus, select:focus {
   border-color: var(--nv-accent) !important;
-  box-shadow: 0 0 6px var(--nv-glow-030, rgba(255, 176, 0, 0.3)) !important;
+  box-shadow: 0 0 6px var(--nv-glow-030, rgba(243, 230, 0, 0.3)) !important;
   outline: none !important;
 }
 
@@ -106,7 +106,7 @@ button {
 
 button:hover {
   background: var(--nv-border) !important;
-  box-shadow: 0 0 8px var(--nv-glow-030, rgba(255, 176, 0, 0.3)) !important;
+  box-shadow: 0 0 8px var(--nv-glow-030, rgba(243, 230, 0, 0.3)) !important;
 }
 
 button:active {
@@ -146,7 +146,7 @@ option, optgroup {
   background: var(--nv-glass-dark) !important;
   backdrop-filter: var(--nv-glass-blur) !important;
   border: 1px solid var(--nv-accent) !important;
-  box-shadow: 0 0 12px var(--nv-glow-015, rgba(255, 176, 0, 0.15)), inset 0 0 12px var(--nv-glow-005, rgba(255, 176, 0, 0.05)) !important;
+  box-shadow: 0 0 12px var(--nv-glow-015, rgba(243, 230, 0, 0.15)), inset 0 0 12px var(--nv-glow-005, rgba(243, 230, 0, 0.05)) !important;
 }
 
 #sidebar-tabs {
@@ -163,7 +163,7 @@ option, optgroup {
   color: var(--nv-text-black) !important;
   background: var(--nv-accent) !important;
   border-color: var(--nv-accent) !important;
-  box-shadow: 0 0 8px var(--nv-glow-040, rgba(255, 176, 0, 0.4)) !important;
+  box-shadow: 0 0 8px var(--nv-glow-040, rgba(243, 230, 0, 0.4)) !important;
 }
 
 #sidebar-tabs > .item:hover {
@@ -209,7 +209,7 @@ option, optgroup {
   background: var(--nv-glass-deep) !important;
   border-bottom: 1px solid var(--nv-border) !important;
   color: var(--nv-accent) !important;
-  text-shadow: 0 0 4px var(--nv-glow-020, rgba(255, 176, 0, 0.2)) !important;
+  text-shadow: 0 0 4px var(--nv-glow-020, rgba(243, 230, 0, 0.2)) !important;
 }
 
 .folder > .folder-header:hover {
@@ -228,13 +228,13 @@ option, optgroup {
   background: var(--nv-bg-dark) !important;
   border: 1px solid var(--nv-accent) !important;
   color: var(--nv-accent) !important;
-  text-shadow: 0 0 4px var(--nv-glow-020, rgba(255, 176, 0, 0.2)) !important;
+  text-shadow: 0 0 4px var(--nv-glow-020, rgba(243, 230, 0, 0.2)) !important;
 }
 
 .sidebar-tab .directory-footer button:hover,
 .directory .action-buttons button:hover {
   background: var(--nv-border) !important;
-  box-shadow: 0 0 8px var(--nv-glow-030, rgba(255, 176, 0, 0.3)) !important;
+  box-shadow: 0 0 8px var(--nv-glow-030, rgba(243, 230, 0, 0.3)) !important;
 }
 
 /* ==========================================================
@@ -255,7 +255,7 @@ option, optgroup {
   background: var(--nv-bg-nearblack) !important;
   border: 1px solid var(--nv-accent) !important;
   color: var(--nv-accent) !important;
-  box-shadow: 0 0 6px var(--nv-glow-015, rgba(255, 176, 0, 0.15)) !important;
+  box-shadow: 0 0 6px var(--nv-glow-015, rgba(243, 230, 0, 0.15)) !important;
   border-radius: 4px !important;
   display: flex !important;
   align-items: center !important;
@@ -267,7 +267,7 @@ option, optgroup {
 
 #navigation #nav-toggle:hover {
   background: var(--nv-bg-dark) !important;
-  box-shadow: 0 0 10px var(--nv-glow-030, rgba(255, 176, 0, 0.3)) !important;
+  box-shadow: 0 0 10px var(--nv-glow-030, rgba(243, 230, 0, 0.3)) !important;
 }
 
 #navigation #scene-list {
@@ -332,7 +332,7 @@ option, optgroup {
   overflow: hidden !important;
   text-overflow: ellipsis !important;
   line-height: 1.4 !important;
-  border-top: 1px solid var(--nv-glow-015, rgba(255, 176, 0, 0.15)) !important;
+  border-top: 1px solid var(--nv-glow-015, rgba(243, 230, 0, 0.15)) !important;
 }
 
 #navigation #scene-list .scene .scene-controls {
@@ -365,7 +365,7 @@ option, optgroup {
 #navigation #scene-list .scene .scene-controls .scene-control:hover {
   border-color: var(--nv-accent) !important;
   color: var(--nv-accent) !important;
-  box-shadow: 0 0 6px var(--nv-glow-030, rgba(255, 176, 0, 0.3)) !important;
+  box-shadow: 0 0 6px var(--nv-glow-030, rgba(243, 230, 0, 0.3)) !important;
 }
 
 #navigation #scene-list .scene:hover {
@@ -377,7 +377,7 @@ option, optgroup {
 #navigation #scene-list .scene.view,
 #navigation #scene-list .scene.context {
   border-color: var(--nv-accent) !important;
-  box-shadow: 0 0 10px var(--nv-glow-035, rgba(255, 176, 0, 0.35)), inset 0 0 10px var(--nv-glow-005, rgba(255, 176, 0, 0.05)) !important;
+  box-shadow: 0 0 10px var(--nv-glow-035, rgba(243, 230, 0, 0.35)), inset 0 0 10px var(--nv-glow-005, rgba(243, 230, 0, 0.05)) !important;
 }
 
 #navigation #scene-list .scene.view .scene-name,
@@ -397,7 +397,7 @@ option, optgroup {
   top: 2px !important;
   left: 2px !important;
   z-index: 3 !important;
-  background: rgba(255, 140, 0, 0.85) !important;
+  background: rgba(255, 0, 128, 0.85) !important;
   color: var(--nv-text-black) !important;
   font-size: 8px !important;
   font-family: "Tektur", monospace !important;
@@ -424,13 +424,13 @@ option, optgroup {
 .scene-control:hover, .control-tool:hover {
   border-color: var(--nv-accent) !important;
   color: var(--nv-accent) !important;
-  box-shadow: 0 0 6px var(--nv-glow-020, rgba(255, 176, 0, 0.2)) !important;
+  box-shadow: 0 0 6px var(--nv-glow-020, rgba(243, 230, 0, 0.2)) !important;
 }
 
 .scene-control.active, .control-tool.active {
   border-color: var(--nv-accent) !important;
   color: var(--nv-accent) !important;
-  box-shadow: 0 0 8px var(--nv-glow-030, rgba(255, 176, 0, 0.3)), inset 0 0 8px var(--nv-glow-010, rgba(255, 176, 0, 0.1)) !important;
+  box-shadow: 0 0 8px var(--nv-glow-030, rgba(243, 230, 0, 0.3)), inset 0 0 8px var(--nv-glow-010, rgba(243, 230, 0, 0.1)) !important;
 }
 
 /* ==========================================================
@@ -463,7 +463,7 @@ option, optgroup {
 .demon-sheet a:hover,
 .item-sheet a:hover,
 .dialog-sheet a:hover {
-  text-shadow: 0 0 8px var(--nv-glow-050, rgba(255, 176, 0, 0.5)) !important;
+  text-shadow: 0 0 8px var(--nv-glow-050, rgba(243, 230, 0, 0.5)) !important;
 }
 
 /* ==========================================================
@@ -497,7 +497,7 @@ option, optgroup {
   background: var(--nv-accent) !important;
   color: var(--nv-text-black) !important;
   border-color: var(--nv-accent) !important;
-  box-shadow: 0 0 8px var(--nv-glow-030, rgba(255, 176, 0, 0.3)) !important;
+  box-shadow: 0 0 8px var(--nv-glow-030, rgba(243, 230, 0, 0.3)) !important;
 }
 
 .navtabs-side .tab-button:hover {
@@ -811,7 +811,7 @@ option, optgroup {
   background-color: var(--nv-accent) !important;
   color: var(--nv-text-black) !important;
   border-color: var(--nv-accent) !important;
-  box-shadow: 0 0 8px var(--nv-glow-030, rgba(255, 176, 0, 0.3)) !important;
+  box-shadow: 0 0 8px var(--nv-glow-030, rgba(243, 230, 0, 0.3)) !important;
 }
 
 .tab-label:hover {
@@ -829,7 +829,7 @@ option, optgroup {
 }
 
 .cpr-tabs .item.active {
-  text-shadow: 0 0 8px var(--nv-glow-050, rgba(255, 176, 0, 0.5)) !important;
+  text-shadow: 0 0 8px var(--nv-glow-050, rgba(243, 230, 0, 0.5)) !important;
 }
 
 /* ==========================================================
@@ -1043,7 +1043,7 @@ option, optgroup {
 
 .weapon-attack a:hover,
 .weapon-damage a:hover {
-  text-shadow: 0 0 8px var(--nv-glow-050, rgba(255, 176, 0, 0.5)) !important;
+  text-shadow: 0 0 8px var(--nv-glow-050, rgba(243, 230, 0, 0.5)) !important;
 }
 
 .weapon-image i {
@@ -1171,7 +1171,7 @@ option, optgroup {
 
 .mook-stat .rollable:hover {
   color: var(--nv-accent) !important;
-  text-shadow: 0 0 6px var(--nv-glow-030, rgba(255, 176, 0, 0.3)) !important;
+  text-shadow: 0 0 6px var(--nv-glow-030, rgba(243, 230, 0, 0.3)) !important;
 }
 
 .mook-stat .block-data input {
@@ -1475,7 +1475,7 @@ option, optgroup {
   color: var(--nv-accent) !important;
   border: 1px solid var(--nv-border) !important;
   border-left: 3px solid var(--nv-accent) !important;
-  box-shadow: 0 0 6px var(--nv-glow-008, rgba(255, 176, 0, 0.08)) !important;
+  box-shadow: 0 0 6px var(--nv-glow-008, rgba(243, 230, 0, 0.08)) !important;
 }
 
 .chat-message .message-header,
@@ -1553,7 +1553,7 @@ option, optgroup {
 .d6-number-div {
   color: var(--nv-accent) !important;
   font-size: 2.5rem !important;
-  text-shadow: 0 0 8px var(--nv-glow-030, rgba(255, 176, 0, 0.3)) !important;
+  text-shadow: 0 0 8px var(--nv-glow-030, rgba(243, 230, 0, 0.3)) !important;
 }
 
 .d10-number-div a,
@@ -1563,7 +1563,7 @@ option, optgroup {
 
 .d10-number-div a:hover,
 .d6-number-div a:hover {
-  text-shadow: 0 0 12px var(--nv-glow-050, rgba(255, 176, 0, 0.5)) !important;
+  text-shadow: 0 0 12px var(--nv-glow-050, rgba(243, 230, 0, 0.5)) !important;
 }
 
 .d10-data-div,
@@ -1640,7 +1640,7 @@ a.reverseDamage:hover,
 a.displayInjury:hover {
   color: var(--nv-accent) !important;
   border-color: var(--nv-accent) !important;
-  box-shadow: 0 0 6px var(--nv-glow-030, rgba(255, 176, 0, 0.3)) !important;
+  box-shadow: 0 0 6px var(--nv-glow-030, rgba(243, 230, 0, 0.3)) !important;
   text-shadow: none !important;
 }
 
@@ -1687,7 +1687,7 @@ a.inline-roll .dice-tooltip .dice-rolls .roll {
 
 #chat-message:focus {
   border-color: var(--nv-accent) !important;
-  box-shadow: 0 0 6px var(--nv-glow-020, rgba(255, 176, 0, 0.2)) !important;
+  box-shadow: 0 0 6px var(--nv-glow-020, rgba(243, 230, 0, 0.2)) !important;
 }
 
 #chat-controls .roll-type-select {
@@ -1808,7 +1808,7 @@ a.inline-roll .dice-tooltip .dice-rolls .roll {
 .dialog-footer .cpr-dialog-button:hover,
 .dialog .dialog-buttons button:hover {
   background: var(--nv-border) !important;
-  box-shadow: 0 0 8px var(--nv-glow-030, rgba(255, 176, 0, 0.3)) !important;
+  box-shadow: 0 0 8px var(--nv-glow-030, rgba(243, 230, 0, 0.3)) !important;
 }
 
 /* ==========================================================
@@ -1852,7 +1852,7 @@ a.inline-roll .dice-tooltip .dice-rolls .roll {
 
 .toggle-show-mods:hover {
   color: var(--nv-accent) !important;
-  text-shadow: 0 0 6px var(--nv-glow-030, rgba(255, 176, 0, 0.3)) !important;
+  text-shadow: 0 0 6px var(--nv-glow-030, rgba(243, 230, 0, 0.3)) !important;
 }
 
 /* ==========================================================
@@ -1939,7 +1939,7 @@ a.inline-roll .dice-tooltip .dice-rolls .roll {
   background: var(--nv-glass-deep) !important;
   backdrop-filter: var(--nv-glass-blur) !important;
   color: var(--nv-accent) !important;
-  box-shadow: 0 0 8px var(--nv-glow-030, rgba(255, 176, 0, 0.3)) !important;
+  box-shadow: 0 0 8px var(--nv-glow-030, rgba(243, 230, 0, 0.3)) !important;
 }
 
 /* ==========================================================
@@ -1948,7 +1948,7 @@ a.inline-roll .dice-tooltip .dice-rolls .roll {
 #compendium h3 {
   color: var(--nv-accent) !important;
   border-bottom: 1px solid var(--nv-accent) !important;
-  text-shadow: 0 0 4px var(--nv-glow-020, rgba(255, 176, 0, 0.2)) !important;
+  text-shadow: 0 0 4px var(--nv-glow-020, rgba(243, 230, 0, 0.2)) !important;
 }
 
 #compendium ol.compendium-list {
@@ -1975,12 +1975,12 @@ a.inline-roll .dice-tooltip .dice-rolls .roll {
 
 .control-icon:hover {
   border-color: var(--nv-accent) !important;
-  box-shadow: 0 0 6px var(--nv-glow-020, rgba(255, 176, 0, 0.2)) !important;
+  box-shadow: 0 0 6px var(--nv-glow-020, rgba(243, 230, 0, 0.2)) !important;
 }
 
 .control-icon.active {
   border-color: var(--nv-accent) !important;
-  box-shadow: 0 0 8px var(--nv-glow-030, rgba(255, 176, 0, 0.3)), inset 0 0 8px var(--nv-glow-010, rgba(255, 176, 0, 0.1)) !important;
+  box-shadow: 0 0 8px var(--nv-glow-030, rgba(243, 230, 0, 0.3)), inset 0 0 8px var(--nv-glow-010, rgba(243, 230, 0, 0.1)) !important;
 }
 
 .dv-table-selector {
@@ -2333,7 +2333,7 @@ form textarea {
 
 .window-app .window-header a:hover {
   color: var(--nv-accent) !important;
-  text-shadow: 0 0 6px var(--nv-glow-030, rgba(255, 176, 0, 0.3)) !important;
+  text-shadow: 0 0 6px var(--nv-glow-030, rgba(243, 230, 0, 0.3)) !important;
 }
 
 .window-app .window-content {
@@ -2425,7 +2425,7 @@ code {
 }
 
 #cpr-migration form.compendia-selection .module-choices label:hover {
-  text-shadow: 0 0 6px var(--nv-glow-030, rgba(255, 176, 0, 0.3)) !important;
+  text-shadow: 0 0 6px var(--nv-glow-030, rgba(243, 230, 0, 0.3)) !important;
 }
 
 /* ==========================================================
@@ -2676,3 +2676,4 @@ button.delete,
 a[data-action="delete"] {
   color: var(--nv-color-danger) !important;
 }
+
