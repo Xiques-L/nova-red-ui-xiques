@@ -42,3 +42,13 @@ Right arrow		CC BY SA https://commons.wikimedia.org/wiki/File:Right_arrow_Hexago
 Buttons		by imacat Public Domain https://opengameart.org/content/buttons-sci-fi
 
 Denim075    by Atropos (FoundryVTT)
+
+## Changelog
+
+### v1.0.1 — Glass Interface (2026-05-28)
+- Efecto glass/transparencia con `backdrop-filter: blur(4px)` en todas las ventanas del sistema
+- Sidebar, ventanas de actor, hojas de item, diálogos, journal, notificaciones, chat tooltips
+- 4 variables CSS personalizables: `--nv-glass-{deep,dark,mid,light}`
+- Elementos interactivos (inputs, botones, selects) mantienen fondo sólido para usabilidad
+- Compatibilidad 100% con Foundry VTT v12
+- Código limpio: solo CSS, sin JS adicional, sin imágenes

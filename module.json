@@ -1,8 +1,8 @@
 {
   "id": "nova-red-ui",
   "title": "Nova Red UI",
-  "description": "Tema ámbar sobre negro para Cyberpunk RED Core. Basado en el módulo original scifi-ui de iotech, modificado y adaptado por SEN404 para Nova-Red Hub.",
-  "version": "1.0.0",
+  "description": "Tema ámbar sobre negro para Cyberpunk RED Core con efecto Glass Interface. Basado en el módulo original scifi-ui de iotech, modificado y adaptado por SEN404 para Nova-Red Hub.",
+  "version": "1.0.1",
   "authors": [
     {
       "name": "SEN404"
