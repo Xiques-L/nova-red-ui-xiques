@@ -9,7 +9,7 @@
 ╚══════════════════════════════════════════════════════════╝
 ```
 
-![Foundry VTT v12](https://img.shields.io/badge/Foundry_VTT-v12-amber?style=flat-square&logo=foundryvirtualtabletop&logoColor=white)
+![Foundry VTT v12](https://img.shields.io/badge/Foundry_VTT-v12-yellow?style=flat-square&logo=foundryvirtualtabletop&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![Handlebars](https://img.shields.io/badge/Handlebars.js-000000?style=flat-square&logo=handlebarsdotjs&logoColor=white)
@@ -68,12 +68,12 @@ https://github.com/DKSEN404/nova-red-ui/releases/latest/download/module.json
 - **Danger buttons** — `.kick-player`, `.delete-user`, `button.delete` in red
 
 ### v1.0.4 — Theme-Neutral: Chameleon Mode *(2026-05-28)*
-- **Chameleon Mode** — module no longer forces the amber theme, adapts to the user's theme color
+- **Chameleon Mode** — module no longer forces the yellow theme, adapts to the user's theme color
 - Removed all `--cpr-*` declarations from `:root` that were overriding the system theme
 - `--nv-accent`, `--nv-border`, `--nv-bg-*`, `--nv-text-*` variables referencing the system's `--cpr-*` variables
-- Glows and shadows adapt to theme via `color-mix()` with amber fallback for legacy browsers
+- Glows and shadows adapt to theme via `color-mix()` with yellow fallback for legacy browsers
 - 521+ hardcoded colors replaced with CSS variable references
-- Compatible with amber, blue, green, red themes — any color works automatically
+- Compatible with yellow, blue, green, red themes — any color works automatically
 
 ### v1.0.3 — Glass Effect in Vertical Layout *(2026-05-28)*
 - Full glass/transparency effect in character and mook vertical layout
@@ -88,7 +88,7 @@ https://github.com/DKSEN404/nova-red-ui/releases/latest/download/module.json
   - `cpr-character-sheet.hbs`, `cpr-mook-sheet.hbs`
   - `character/cpr-sheet-header.hbs`, `cpr-profile-tab.hbs`, `cpr-rolefight-tab.hbs`
   - `mook/cpr-mook-tab1.hbs`, `cpr-mook-tab2.hbs`
-- Full CSS `--cpr-*` variable override for amber/black theme without modifying the system
+- Full CSS `--cpr-*` variable override for yellow/black theme without modifying the system
 - Cyberpunk grid pattern background (`html[data-cpr-theme="default"]`)
 - Partial registration via `Handlebars.registerPartial` for clean installations
 - Monkey-patch of sheet templates to use the module's templates
