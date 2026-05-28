@@ -20,7 +20,7 @@
 
 # Nova Red UI
 
-> **Amber-on-black theme for Cyberpunk RED Core (Foundry VTT).**  
+> **Yellow-on-black theme for Cyberpunk RED Core (Foundry VTT).**  
 > Glass interface, vertical layout, Nova Red terminal aesthetic.
 
 ---
