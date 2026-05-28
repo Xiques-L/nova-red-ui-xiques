@@ -24,6 +24,11 @@
   --nv-text-hint:     var(--cpr-text-foundry-hint, #aa7700);
   --nv-text-black:    var(--cpr-text-tab-highlight, #000000);
 
+  --nv-color-success: var(--cpr-text-chat-success, #00ffaa);
+  --nv-color-danger:  var(--cpr-text-chat-failure, #ff2a2a);
+  --nv-glow-success:  color-mix(in srgb, var(--nv-color-success) 30%, transparent);
+  --nv-glow-danger:   color-mix(in srgb, var(--nv-color-danger) 30%, transparent);
+
   --nv-glow-003: color-mix(in srgb, var(--nv-accent) 3%, transparent);
   --nv-glow-005: color-mix(in srgb, var(--nv-accent) 5%, transparent);
   --nv-glow-008: color-mix(in srgb, var(--nv-accent) 8%, transparent);
@@ -735,7 +740,7 @@ option, optgroup {
 
 /* Death save */
 .death-save-value {
-  color: #ff2a2a !important;
+  color: var(--nv-color-danger) !important;
 }
 
 .actor-details-death-save a {
@@ -1183,7 +1188,7 @@ option, optgroup {
 }
 
 .mook-wounded-stat {
-  color: #ff2a2a !important;
+  color: var(--nv-color-danger) !important;
 }
 
 .mook-deathsave a {
@@ -1595,13 +1600,13 @@ option, optgroup {
    40. SUCCESS / FAILURE
    ========================================================== */
 .roll-success {
-  color: #00ffaa !important;
-  text-shadow: 0 0 8px rgba(0, 255, 170, 0.3) !important;
+  color: var(--nv-color-success) !important;
+  text-shadow: 0 0 8px var(--nv-glow-success, rgba(0, 255, 170, 0.3)) !important;
 }
 
 .roll-failure {
-  color: #ff2a2a !important;
-  text-shadow: 0 0 8px rgba(255, 42, 42, 0.3) !important;
+  color: var(--nv-color-danger) !important;
+  text-shadow: 0 0 8px var(--nv-glow-danger, rgba(255, 42, 42, 0.3)) !important;
 }
 
 /* ==========================================================
@@ -2271,7 +2276,7 @@ a.inline-roll .dice-tooltip .dice-rolls .roll {
 }
 
 .notification-toast.error {
-  border-color: #ff2a2a !important;
+  border-color: var(--nv-color-danger) !important;
 }
 
 .notification-toast.warning {
@@ -2530,10 +2535,144 @@ code {
 }
 
 .dialog .character-import-name.invalid-code {
-  color: #cc3333 !important;
+  color: var(--nv-color-danger) !important;
 }
 
 .dialog .character-import-message {
   color: var(--nv-text-hint) !important;
   font-size: 0.85em !important;
+}
+
+/* ==========================================================
+    68. PLAYER LIST / USER MANAGEMENT
+    ========================================================== */
+
+/* --- Player List (sidebar) --- */
+#players {
+  background: var(--nv-glass-dark) !important;
+}
+
+#players .player {
+  background: var(--nv-glass-mid) !important;
+  border: 1px solid var(--nv-border) !important;
+  color: var(--nv-accent) !important;
+}
+
+#players .player:hover {
+  border-color: var(--nv-accent) !important;
+}
+
+#players .player .player-name {
+  color: var(--nv-accent) !important;
+}
+
+#players .player .player-active {
+  color: var(--nv-color-success) !important;
+}
+
+#players .player .player-offline {
+  color: var(--nv-text-dimmed) !important;
+}
+
+#players .player .player-avatar {
+  border: 1px solid var(--nv-border) !important;
+}
+
+#players .player .player-controls a {
+  color: var(--nv-accent) !important;
+}
+
+#players .player .player-controls a:hover {
+  color: var(--nv-accent-bright) !important;
+}
+
+#players .player .player-controls .kick-player {
+  color: var(--nv-color-danger) !important;
+}
+
+#players .player .player-controls .mute-player {
+  color: var(--nv-accent-dim) !important;
+}
+
+/* --- Player Config --- */
+.player-config .window-content {
+  background: var(--nv-glass-dark) !important;
+}
+
+.player-config .permission-table {
+  background: var(--nv-glass-mid) !important;
+  border: 1px solid var(--nv-border) !important;
+}
+
+.player-config .permission-table th {
+  background: var(--nv-bg-dark) !important;
+  color: var(--nv-accent) !important;
+  border-bottom: 1px solid var(--nv-border) !important;
+}
+
+.player-config .permission-table td {
+  background: var(--nv-bg-nearblack) !important;
+  color: var(--nv-accent) !important;
+  border: 1px solid var(--nv-border) !important;
+}
+
+.player-config .permission-table td select {
+  background: var(--nv-bg-input) !important;
+  color: var(--nv-accent) !important;
+  border: 1px solid var(--nv-border) !important;
+}
+
+.player-config .dialog-buttons button.default {
+  background: var(--nv-color-success) !important;
+  color: var(--nv-text-black) !important;
+  border: 1px solid transparent !important;
+}
+
+.player-config .dialog-buttons button.default:hover {
+  filter: brightness(1.2) !important;
+}
+
+/* --- User Management --- */
+.user-config .user-list {
+  background: var(--nv-glass-mid) !important;
+  border: 1px solid var(--nv-border) !important;
+}
+
+.user-config .user-list-header {
+  background: var(--nv-bg-dark) !important;
+  color: var(--nv-accent) !important;
+  border-bottom: 1px solid var(--nv-border) !important;
+}
+
+.user-config .user-list-row {
+  background: var(--nv-bg-nearblack) !important;
+  color: var(--nv-accent) !important;
+  border-bottom: 1px solid var(--nv-border) !important;
+}
+
+.user-config .user-list-row:hover {
+  background: var(--nv-bg-dark) !important;
+}
+
+.user-config .user-list-row .user-list-controls a {
+  color: var(--nv-accent) !important;
+}
+
+.user-config .user-list-row .user-list-controls .delete-user {
+  color: var(--nv-color-danger) !important;
+}
+
+.user-config .dialog-buttons button.default {
+  background: var(--nv-color-success) !important;
+  color: var(--nv-text-black) !important;
+  border: 1px solid transparent !important;
+}
+
+.user-config .dialog-buttons button.default:hover {
+  filter: brightness(1.2) !important;
+}
+
+button.delete,
+a[data-action="delete"] {
+  color: var(--nv-color-danger) !important;
 }

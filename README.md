@@ -59,6 +59,14 @@ https://github.com/DKSEN404/nova-red-ui/releases/latest/download/module.json
 
 ## Changelog
 
+### v1.0.5 — Player UI & Semantic Colors *(2026-05-28)*
+- **Player List** — sidebar `#players` estilizado con glass, bordes y hover
+- **Player Config** — ventana de permisos con grilla, selects y botón aceptar en verde
+- **User Management** — tabla de usuarios con filas alternadas, controles y botón guardar
+- **Colores semánticos** — variables `--nv-color-success` (verde) y `--nv-color-danger` (rojo) que se adaptan al tema
+- **Corrección Chameleon**: death saves, wounded, fallos → rojo; éxitos, online, aceptar → verde
+- **Botones danger** — `.kick-player`, `.delete-user`, `button.delete` en rojo
+
 ### v1.0.4 — Theme-Neutral: Chameleon Mode *(2026-05-28)*
 - **Chameleon Mode** — module no longer forces the amber theme, adapts to the user's theme color
 - Removed all `--cpr-*` declarations from `:root` that were overriding the system theme
