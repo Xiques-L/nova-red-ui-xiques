@@ -1,0 +1,21 @@
+<div class="rolefight-tab-content">
+  <div class="role-section">
+    {{> "systems/cyberpunk-red-core/templates/actor/character/bottom-pane/cpr-role-tab.hbs"}}
+  </div>
+  <div class="combat-section">
+    <div class="armor-section">
+      <li class="items-header flexrow">
+        <span class="item-name section-name text-nowrap text-padding-left-smallest">{{localize "CPR.global.itemTypes.armor"}}</span>
+      </li>
+      {{> "systems/cyberpunk-red-core/templates/actor/mixin/fight/cpr-armor-list.hbs"}}
+    </div>
+    <div class="weapon-section">
+      {{#if (cprIsEmpty actor.system.weapons.equipped)}}
+        <li class="items-header flexrow">
+          <span class="text-padding-left-smallest">{{localize "CPR.characterSheet.bottomPane.fight.weapons"}}</span>
+        </li>
+      {{/if}}
+      {{> "systems/cyberpunk-red-core/templates/actor/mixin/fight/cpr-weapons-list.hbs"}}
+    </div>
+  </div>
+</div>

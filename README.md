@@ -45,6 +45,18 @@ Denim075    by Atropos (FoundryVTT)
 
 ## Changelog
 
+### v1.0.2 — Vertical Layout y Theme Override (2026-05-28)
+- Nuevo layout vertical para hojas de personaje (`.character-vertical`) y mook (`.mook-sheet-vertical`)
+- 7 templates propios del módulo para independencia del sistema:
+  - `cpr-character-sheet.hbs`, `cpr-mook-sheet.hbs`
+  - `character/cpr-sheet-header.hbs`, `cpr-profile-tab.hbs`, `cpr-rolefight-tab.hbs`
+  - `mook/cpr-mook-tab1.hbs`, `cpr-mook-tab2.hbs`
+- Override completo de variables CSS `--cpr-*` para tema ámbar/negro sin modificar el sistema
+- Patrón de cuadrícula cyberpunk en fondo (`html[data-cpr-theme="default"]`)
+- Registro de partials vía Handlebars.registerPartial para que funcione en instalaciones limpias
+- Monkey-patch de sheet templates para usar las plantillas del módulo
+- Compatibilidad 100% con Foundry VTT v12 sin dependencias externas
+
 ### v1.0.1 — Glass Interface (2026-05-28)
 - Efecto glass/transparencia con `backdrop-filter: blur(4px)` en todas las ventanas del sistema
 - Sidebar, ventanas de actor, hojas de item, diálogos, journal, notificaciones, chat tooltips

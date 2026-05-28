@@ -9,6 +9,109 @@
   --nv-glass-mid:    rgba(10, 10, 10, 0.45);
   --nv-glass-light:  rgba(13, 13, 13, 0.40);
   --nv-glass-blur:   blur(4px);
+
+  --cpr-font-primary: "Tektur", monospace;
+
+  --cpr-color-black: #000000;
+  --cpr-color-dark-grey: #332200;
+  --cpr-color-faded-black: rgba(0, 0, 0, 0.6);
+  --cpr-color-light-grey: #664d00;
+  --cpr-color-medium-grey: #554400;
+  --cpr-color-near-black: #0a0a0a;
+  --cpr-color-off-black: #050505;
+  --cpr-color-pink: #ff8c00;
+  --cpr-color-red: #ff2a2a;
+  --cpr-color-white: #ffb000;
+
+  --cpr-background-border: #ffb000;
+  --cpr-background-box: #0a0a0a;
+  --cpr-background-chat-border: #ffb000;
+  --cpr-background-chat-card-block-before: #0a0a0a;
+  --cpr-background-chat-card-block: #ffb000;
+  --cpr-background-chat-card: #0a0a0a;
+  --cpr-background-chat: rgba(0, 0, 0, 0.6);
+  --cpr-background-chat-inline-roll: rgba(255, 176, 0, 0.1);
+  --cpr-background-code: #1a1a00;
+  --cpr-background-cyberdeck-section-header: #1a1a00;
+  --cpr-background-dialog-border: #ffb000;
+  --cpr-background-dialog-hr-gradient-end: #332200;
+  --cpr-background-dialog-hr-gradient-middle: rgba(255, 176, 0, 0.5);
+  --cpr-background-dialog-hr-gradient-start: #000000;
+  --cpr-background-dialog-selected: #1a1a00;
+  --cpr-background-editor-button: #1a1a0a;
+  --cpr-background-editor-button-selected: #332200;
+  --cpr-background-editor-header: #0a0a0a;
+  --cpr-background-foundry-hover: #ffb000;
+  --cpr-background-foundry-input: #0d0d0d;
+  --cpr-background-foundry-button: #1a1a0a;
+  --cpr-background-header: #000000;
+  --cpr-background-migration-progress: #00ffaa;
+  --cpr-background-migration-modal-backdrop: rgba(0, 0, 0, 0.85);
+  --cpr-background-progress-border: #ffb000;
+  --cpr-background-progress-label: rgba(0, 0, 0, 0.6);
+  --cpr-background-progress: #ffb000;
+  --cpr-background-pill: #1a1a00;
+  --cpr-background-row-even: #0a0a0a;
+  --cpr-background-row-odd: #0d0d0d;
+  --cpr-background-tab-active: #ffb000;
+  --cpr-background-tab-inactive: #0d0d0d;
+  --cpr-background-tab-underlay: #1a1a00;
+  --cpr-background-toggle-unchecked: #332200;
+  --cpr-background-toggle-checked: #ffb000;
+  --cpr-background-toggle-dot: #ffb000;
+  --cpr-background-window: #050505;
+  --cpr-background-content-link: #1a1a0a;
+  --cpr-background-journal-blockquote: #111100;
+  --cpr-background-journal-secret-hidden-border: #ff2a2a;
+  --cpr-background-journal-secret-hidden-background: rgba(255, 42, 42, 0.1);
+  --cpr-background-journal-info: rgba(0, 255, 170, 0.1);
+  --cpr-background-item-dir-installed-header: rgba(255, 176, 0, 0.1);
+  --cpr-pause-text: #ffb000;
+  --cpr-pause-highlight1: #ff8c00;
+  --cpr-pause-highlight2: #00ffaa;
+  --cpr-item-dir-border: rgba(255, 176, 0, 0.3);
+  --cpr-migration-overlay-error: rgba(255, 42, 42, 0.7);
+  --cpr-migration-overlay-success: rgba(0, 255, 170, 0.7);
+  --cpr-migration-overlay-warning: rgba(255, 176, 0, 0.7);
+
+  --cpr-text-chat-failure: #ff2a2a;
+  --cpr-text-chat-normal: #ffb000;
+  --cpr-text-chat-success: #00ffaa;
+  --cpr-text-content-link-icon: #ffb000;
+  --cpr-text-editor-button: #ffb000;
+  --cpr-text-editor-header: #ffb000;
+  --cpr-text-foundry-hint: #aa7700;
+  --cpr-text-foundry-hover: #ffcc00;
+  --cpr-text-foundry-input: #ffb000;
+  --cpr-text-header: #ffb000;
+  --cpr-text-header-line: #ffb000;
+  --cpr-text-header-line-box: #ff8c00;
+  --cpr-text-header-arrow: #ffb000;
+  --cpr-text-icon-dimmed: #554400;
+  --cpr-text-icon-highlight: #ff8c00;
+  --cpr-text-icon-normal: #ffb000;
+  --cpr-text-input: #ffb000;
+  --cpr-text-mook-header: #ffb000;
+  --cpr-text-mook-name: #ffb000;
+  --cpr-text-mook-normal: #ffb000;
+  --cpr-text-normal: #ffb000;
+  --cpr-text-pill: #ffb000;
+  --cpr-text-tab-highlight: #000000;
+  --cpr-text-tab-normal: #ffb000;
+  --cpr-text-window: #ffb000;
+  --cpr-text-hint: #aa7700;
+  --cpr-text-pause: #ffb000;
+  --cpr-text-journal-table-header: #000000;
+  --cpr-text-dir-list: #ffb000;
+  --cpr-icon-actor-image-overlay: #ffb000;
+  --cpr-icon-actor-image-overlay-border: #ff8c00;
+}
+
+html[data-cpr-theme="default"] {
+  background-image:
+    linear-gradient(rgba(255, 176, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 176, 0, 0.03) 1px, transparent 1px);
+  background-size: 20px 20px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
