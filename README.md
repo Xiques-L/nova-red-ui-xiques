@@ -52,6 +52,14 @@ https://github.com/DKSEN404/nova-red-ui/releases/latest/download/module.json
 
 ## Changelog
 
+### v1.0.4 — Theme-Neutral: Modo Camaleón *(2026-05-28)*
+- **Modo Camaleón** — el módulo ya no fuerza el tema ámbar, se adapta al color del tema del usuario
+- Eliminadas todas las declaraciones `--cpr-*` del `:root` que pisaban el tema del sistema
+- Variables `--nv-accent`, `--nv-border`, `--nv-bg-*`, `--nv-text-*` que referencian las variables `--cpr-*` del sistema
+- Glows y sombras se adaptan al tema via `color-mix()` con fallback ámbar para navegadores antiguos
+- 521+ colores hardcodeados reemplazados por referencias a variables CSS
+- Compatibilidad: temas ámbar, azul, verde, rojo — cualquier color funciona automáticamente
+
 ### v1.0.3 — Glass Effect en Layout Vertical *(2026-05-28)*
 - Efecto glass/transparencia completo en layout vertical de personaje y mook
 - Cobertura total: `.character-vertical`, `.mook-sheet-vertical`, `.sheet-vertical`, `.profile-header`, `.stats-bar`, `.mook-header`, `.navtabs-side`, tab-content, skills, combat, equipment, notes

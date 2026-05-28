@@ -12,105 +12,38 @@
 
   --cpr-font-primary: "Tektur", monospace;
 
-  --cpr-color-black: #000000;
-  --cpr-color-dark-grey: #332200;
-  --cpr-color-faded-black: rgba(0, 0, 0, 0.6);
-  --cpr-color-light-grey: #664d00;
-  --cpr-color-medium-grey: #554400;
-  --cpr-color-near-black: #0a0a0a;
-  --cpr-color-off-black: #050505;
-  --cpr-color-pink: #ff8c00;
-  --cpr-color-red: #ff2a2a;
-  --cpr-color-white: #ffb000;
+  --nv-accent:        var(--cpr-color-white, #ffb000);
+  --nv-accent-dim:    var(--cpr-color-pink, #ff8c00);
+  --nv-accent-bright: var(--cpr-text-foundry-hover, #ffcc00);
+  --nv-border:        var(--cpr-color-dark-grey, #332200);
+  --nv-bg-input:      var(--cpr-background-foundry-input, #0d0d0d);
+  --nv-bg-dark:       var(--cpr-background-pill, #1a1a00);
+  --nv-bg-nearblack:  var(--cpr-color-near-black, #0a0a0a);
+  --nv-bg-offblack:   var(--cpr-color-off-black, #050505);
+  --nv-text-dimmed:   var(--cpr-color-medium-grey, #554400);
+  --nv-text-hint:     var(--cpr-text-foundry-hint, #aa7700);
+  --nv-text-black:    var(--cpr-text-tab-highlight, #000000);
 
-  --cpr-background-border: #ffb000;
-  --cpr-background-box: #0a0a0a;
-  --cpr-background-chat-border: #ffb000;
-  --cpr-background-chat-card-block-before: #0a0a0a;
-  --cpr-background-chat-card-block: #ffb000;
-  --cpr-background-chat-card: #0a0a0a;
-  --cpr-background-chat: rgba(0, 0, 0, 0.6);
-  --cpr-background-chat-inline-roll: rgba(255, 176, 0, 0.1);
-  --cpr-background-code: #1a1a00;
-  --cpr-background-cyberdeck-section-header: #1a1a00;
-  --cpr-background-dialog-border: #ffb000;
-  --cpr-background-dialog-hr-gradient-end: #332200;
-  --cpr-background-dialog-hr-gradient-middle: rgba(255, 176, 0, 0.5);
-  --cpr-background-dialog-hr-gradient-start: #000000;
-  --cpr-background-dialog-selected: #1a1a00;
-  --cpr-background-editor-button: #1a1a0a;
-  --cpr-background-editor-button-selected: #332200;
-  --cpr-background-editor-header: #0a0a0a;
-  --cpr-background-foundry-hover: #ffb000;
-  --cpr-background-foundry-input: #0d0d0d;
-  --cpr-background-foundry-button: #1a1a0a;
-  --cpr-background-header: #000000;
-  --cpr-background-migration-progress: #00ffaa;
-  --cpr-background-migration-modal-backdrop: rgba(0, 0, 0, 0.85);
-  --cpr-background-progress-border: #ffb000;
-  --cpr-background-progress-label: rgba(0, 0, 0, 0.6);
-  --cpr-background-progress: #ffb000;
-  --cpr-background-pill: #1a1a00;
-  --cpr-background-row-even: #0a0a0a;
-  --cpr-background-row-odd: #0d0d0d;
-  --cpr-background-tab-active: #ffb000;
-  --cpr-background-tab-inactive: #0d0d0d;
-  --cpr-background-tab-underlay: #1a1a00;
-  --cpr-background-toggle-unchecked: #332200;
-  --cpr-background-toggle-checked: #ffb000;
-  --cpr-background-toggle-dot: #ffb000;
-  --cpr-background-window: #050505;
-  --cpr-background-content-link: #1a1a0a;
-  --cpr-background-journal-blockquote: #111100;
-  --cpr-background-journal-secret-hidden-border: #ff2a2a;
-  --cpr-background-journal-secret-hidden-background: rgba(255, 42, 42, 0.1);
-  --cpr-background-journal-info: rgba(0, 255, 170, 0.1);
-  --cpr-background-item-dir-installed-header: rgba(255, 176, 0, 0.1);
-  --cpr-pause-text: #ffb000;
-  --cpr-pause-highlight1: #ff8c00;
-  --cpr-pause-highlight2: #00ffaa;
-  --cpr-item-dir-border: rgba(255, 176, 0, 0.3);
-  --cpr-migration-overlay-error: rgba(255, 42, 42, 0.7);
-  --cpr-migration-overlay-success: rgba(0, 255, 170, 0.7);
-  --cpr-migration-overlay-warning: rgba(255, 176, 0, 0.7);
-
-  --cpr-text-chat-failure: #ff2a2a;
-  --cpr-text-chat-normal: #ffb000;
-  --cpr-text-chat-success: #00ffaa;
-  --cpr-text-content-link-icon: #ffb000;
-  --cpr-text-editor-button: #ffb000;
-  --cpr-text-editor-header: #ffb000;
-  --cpr-text-foundry-hint: #aa7700;
-  --cpr-text-foundry-hover: #ffcc00;
-  --cpr-text-foundry-input: #ffb000;
-  --cpr-text-header: #ffb000;
-  --cpr-text-header-line: #ffb000;
-  --cpr-text-header-line-box: #ff8c00;
-  --cpr-text-header-arrow: #ffb000;
-  --cpr-text-icon-dimmed: #554400;
-  --cpr-text-icon-highlight: #ff8c00;
-  --cpr-text-icon-normal: #ffb000;
-  --cpr-text-input: #ffb000;
-  --cpr-text-mook-header: #ffb000;
-  --cpr-text-mook-name: #ffb000;
-  --cpr-text-mook-normal: #ffb000;
-  --cpr-text-normal: #ffb000;
-  --cpr-text-pill: #ffb000;
-  --cpr-text-tab-highlight: #000000;
-  --cpr-text-tab-normal: #ffb000;
-  --cpr-text-window: #ffb000;
-  --cpr-text-hint: #aa7700;
-  --cpr-text-pause: #ffb000;
-  --cpr-text-journal-table-header: #000000;
-  --cpr-text-dir-list: #ffb000;
-  --cpr-icon-actor-image-overlay: #ffb000;
-  --cpr-icon-actor-image-overlay-border: #ff8c00;
+  --nv-glow-003: color-mix(in srgb, var(--nv-accent) 3%, transparent);
+  --nv-glow-005: color-mix(in srgb, var(--nv-accent) 5%, transparent);
+  --nv-glow-008: color-mix(in srgb, var(--nv-accent) 8%, transparent);
+  --nv-glow-010: color-mix(in srgb, var(--nv-accent) 10%, transparent);
+  --nv-glow-015: color-mix(in srgb, var(--nv-accent) 15%, transparent);
+  --nv-glow-020: color-mix(in srgb, var(--nv-accent) 20%, transparent);
+  --nv-glow-030: color-mix(in srgb, var(--nv-accent) 30%, transparent);
+  --nv-glow-035: color-mix(in srgb, var(--nv-accent) 35%, transparent);
+  --nv-glow-040: color-mix(in srgb, var(--nv-accent) 40%, transparent);
+  --nv-glow-050: color-mix(in srgb, var(--nv-accent) 50%, transparent);
+  --nv-glow-070: color-mix(in srgb, var(--nv-accent) 70%, transparent);
 }
 
 html[data-cpr-theme="default"] {
   background-image:
-    linear-gradient(rgba(255, 176, 0, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 176, 0, 0.03) 1px, transparent 1px);
+    linear-gradient(var(--nv-glow-003, rgba(255, 176, 0, 0.03)) 1px, transparent 1px),
+    linear-gradient(90deg, var(--nv-glow-003, rgba(255, 176, 0, 0.03)) 1px, transparent 1px);
+  background-image:
+    linear-gradient(var(--nv-glow-003) 1px, transparent 1px),
+    linear-gradient(90deg, var(--nv-glow-003) 1px, transparent 1px);
   background-size: 20px 20px;
 }
 
@@ -140,44 +73,44 @@ input[type="search"],
 input,
 select,
 button {
-  color: #ffb000 !important;
-  background: #0d0d0d !important;
-  border: 1px solid #332200 !important;
+  color: var(--nv-accent) !important;
+  background: var(--nv-bg-input) !important;
+  border: 1px solid var(--nv-border) !important;
 }
 
 input:hover, select:hover, button:hover {
-  border-color: #ffb000 !important;
+  border-color: var(--nv-accent) !important;
 }
 
 input:focus, select:focus {
-  border-color: #ffb000 !important;
-  box-shadow: 0 0 6px rgba(255, 176, 0, 0.3) !important;
+  border-color: var(--nv-accent) !important;
+  box-shadow: 0 0 6px var(--nv-glow-030, rgba(255, 176, 0, 0.3)) !important;
   outline: none !important;
 }
 
 input::placeholder {
-  color: #554400 !important;
+  color: var(--nv-text-dimmed) !important;
   opacity: 0.6;
 }
 
 button {
-  background: #1a1a00 !important;
-  border: 1px solid #ffb000 !important;
-  color: #ffb000 !important;
+  background: var(--nv-bg-dark) !important;
+  border: 1px solid var(--nv-accent) !important;
+  color: var(--nv-accent) !important;
 }
 
 button:hover {
-  background: #332200 !important;
-  box-shadow: 0 0 8px rgba(255, 176, 0, 0.3) !important;
+  background: var(--nv-border) !important;
+  box-shadow: 0 0 8px var(--nv-glow-030, rgba(255, 176, 0, 0.3)) !important;
 }
 
 button:active {
-  background: #554400 !important;
+  background: var(--nv-text-dimmed) !important;
 }
 
 option, optgroup {
-  background: #0a0a0a !important;
-  color: #ffb000 !important;
+  background: var(--nv-bg-nearblack) !important;
+  color: var(--nv-accent) !important;
 }
 
 /* ==========================================================
@@ -189,16 +122,16 @@ option, optgroup {
 }
 
 ::-webkit-scrollbar-track {
-  background: #050505 !important;
+  background: var(--nv-bg-offblack) !important;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #332200 !important;
-  border: 1px solid #554400 !important;
+  background: var(--nv-border) !important;
+  border: 1px solid var(--nv-text-dimmed) !important;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #554400 !important;
+  background: var(--nv-text-dimmed) !important;
 }
 
 /* ==========================================================
@@ -207,61 +140,61 @@ option, optgroup {
 #sidebar {
   background: var(--nv-glass-dark) !important;
   backdrop-filter: var(--nv-glass-blur) !important;
-  border: 1px solid #ffb000 !important;
-  box-shadow: 0 0 12px rgba(255, 176, 0, 0.15), inset 0 0 12px rgba(255, 176, 0, 0.05) !important;
+  border: 1px solid var(--nv-accent) !important;
+  box-shadow: 0 0 12px var(--nv-glow-015, rgba(255, 176, 0, 0.15)), inset 0 0 12px var(--nv-glow-005, rgba(255, 176, 0, 0.05)) !important;
 }
 
 #sidebar-tabs {
-  border-bottom: 1px solid #ffb000 !important;
+  border-bottom: 1px solid var(--nv-accent) !important;
   background: var(--nv-glass-deep) !important;
 }
 
 #sidebar-tabs > .item {
-  color: #554400 !important;
+  color: var(--nv-text-dimmed) !important;
   border: 1px solid transparent !important;
 }
 
 #sidebar-tabs > .item.active {
-  color: #000000 !important;
-  background: #ffb000 !important;
-  border-color: #ffb000 !important;
-  box-shadow: 0 0 8px rgba(255, 176, 0, 0.4) !important;
+  color: var(--nv-text-black) !important;
+  background: var(--nv-accent) !important;
+  border-color: var(--nv-accent) !important;
+  box-shadow: 0 0 8px var(--nv-glow-040, rgba(255, 176, 0, 0.4)) !important;
 }
 
 #sidebar-tabs > .item:hover {
-  color: #ffb000 !important;
-  border-color: #ffb000 !important;
+  color: var(--nv-accent) !important;
+  border-color: var(--nv-accent) !important;
 }
 
 .sidebar-tab .directory-header {
-  background: #0a0a0a !important;
-  border-bottom: 1px solid #332200 !important;
+  background: var(--nv-bg-nearblack) !important;
+  border-bottom: 1px solid var(--nv-border) !important;
 }
 
 .sidebar-tab .directory-header .header-search input {
-  background: #0d0d0d !important;
-  border: 1px solid #332200 !important;
-  color: #ffb000 !important;
+  background: var(--nv-bg-input) !important;
+  border: 1px solid var(--nv-border) !important;
+  color: var(--nv-accent) !important;
 }
 
 .sidebar-tab .directory-header .header-search input:focus {
-  border-color: #ffb000 !important;
+  border-color: var(--nv-accent) !important;
 }
 
 .directory-list .directory-item {
-  border-bottom: 1px solid #0d0d0d !important;
-  color: #aa7700 !important;
+  border-bottom: 1px solid var(--nv-bg-input) !important;
+  color: var(--nv-text-hint) !important;
 }
 
 .directory-list .directory-item:hover {
-  background: #0d0d0d !important;
-  color: #ffb000 !important;
+  background: var(--nv-bg-input) !important;
+  color: var(--nv-accent) !important;
 }
 
 .directory-list .directory-item.active {
-  background: #1a1a00 !important;
-  color: #ffb000 !important;
-  border-left: 3px solid #ffb000 !important;
+  background: var(--nv-bg-dark) !important;
+  color: var(--nv-accent) !important;
+  border-left: 3px solid var(--nv-accent) !important;
 }
 
 /* ==========================================================
@@ -269,17 +202,17 @@ option, optgroup {
    ========================================================== */
 .folder > .folder-header {
   background: var(--nv-glass-deep) !important;
-  border-bottom: 1px solid #332200 !important;
-  color: #ffb000 !important;
-  text-shadow: 0 0 4px rgba(255, 176, 0, 0.2) !important;
+  border-bottom: 1px solid var(--nv-border) !important;
+  color: var(--nv-accent) !important;
+  text-shadow: 0 0 4px var(--nv-glow-020, rgba(255, 176, 0, 0.2)) !important;
 }
 
 .folder > .folder-header:hover {
-  border-bottom-color: #ffb000 !important;
+  border-bottom-color: var(--nv-accent) !important;
 }
 
 .subdirectory .folder {
-  border-left: 2px solid #332200 !important;
+  border-left: 2px solid var(--nv-border) !important;
 }
 
 /* ==========================================================
@@ -287,16 +220,16 @@ option, optgroup {
    ========================================================== */
 .sidebar-tab .directory-footer button,
 .directory .action-buttons button {
-  background: #1a1a00 !important;
-  border: 1px solid #ffb000 !important;
-  color: #ffb000 !important;
-  text-shadow: 0 0 4px rgba(255, 176, 0, 0.2) !important;
+  background: var(--nv-bg-dark) !important;
+  border: 1px solid var(--nv-accent) !important;
+  color: var(--nv-accent) !important;
+  text-shadow: 0 0 4px var(--nv-glow-020, rgba(255, 176, 0, 0.2)) !important;
 }
 
 .sidebar-tab .directory-footer button:hover,
 .directory .action-buttons button:hover {
-  background: #332200 !important;
-  box-shadow: 0 0 8px rgba(255, 176, 0, 0.3) !important;
+  background: var(--nv-border) !important;
+  box-shadow: 0 0 8px var(--nv-glow-030, rgba(255, 176, 0, 0.3)) !important;
 }
 
 /* ==========================================================
@@ -314,10 +247,10 @@ option, optgroup {
 #navigation #nav-toggle {
   flex: 0 0 36px !important;
   height: 36px !important;
-  background: #0a0a0a !important;
-  border: 1px solid #ffb000 !important;
-  color: #ffb000 !important;
-  box-shadow: 0 0 6px rgba(255, 176, 0, 0.15) !important;
+  background: var(--nv-bg-nearblack) !important;
+  border: 1px solid var(--nv-accent) !important;
+  color: var(--nv-accent) !important;
+  box-shadow: 0 0 6px var(--nv-glow-015, rgba(255, 176, 0, 0.15)) !important;
   border-radius: 4px !important;
   display: flex !important;
   align-items: center !important;
@@ -328,8 +261,8 @@ option, optgroup {
 }
 
 #navigation #nav-toggle:hover {
-  background: #1a1a00 !important;
-  box-shadow: 0 0 10px rgba(255, 176, 0, 0.3) !important;
+  background: var(--nv-bg-dark) !important;
+  box-shadow: 0 0 10px var(--nv-glow-030, rgba(255, 176, 0, 0.3)) !important;
 }
 
 #navigation #scene-list {
@@ -350,7 +283,7 @@ option, optgroup {
 }
 
 #navigation #scene-list::-webkit-scrollbar-thumb {
-  background: #332200 !important;
+  background: var(--nv-border) !important;
   border-radius: 2px !important;
 }
 
@@ -358,8 +291,8 @@ option, optgroup {
   flex: 0 0 120px !important;
   height: 90px !important;
   position: relative !important;
-  background: #0a0a0a !important;
-  border: 1px solid #332200 !important;
+  background: var(--nv-bg-nearblack) !important;
+  border: 1px solid var(--nv-border) !important;
   border-radius: 4px !important;
   overflow: hidden !important;
   cursor: pointer !important;
@@ -386,7 +319,7 @@ option, optgroup {
   width: 100% !important;
   padding: 3px 6px !important;
   background: rgba(0, 0, 0, 0.8) !important;
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
   font-size: 10px !important;
   font-family: "Tektur", monospace !important;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.8) !important;
@@ -394,7 +327,7 @@ option, optgroup {
   overflow: hidden !important;
   text-overflow: ellipsis !important;
   line-height: 1.4 !important;
-  border-top: 1px solid rgba(255, 176, 0, 0.15) !important;
+  border-top: 1px solid var(--nv-glow-015, rgba(255, 176, 0, 0.15)) !important;
 }
 
 #navigation #scene-list .scene .scene-controls {
@@ -414,8 +347,8 @@ option, optgroup {
   flex: 0 0 22px !important;
   height: 22px !important;
   background: rgba(0, 0, 0, 0.85) !important;
-  border: 1px solid #554400 !important;
-  color: #aa7700 !important;
+  border: 1px solid var(--nv-text-dimmed) !important;
+  color: var(--nv-text-hint) !important;
   border-radius: 3px !important;
   display: flex !important;
   align-items: center !important;
@@ -425,32 +358,32 @@ option, optgroup {
 }
 
 #navigation #scene-list .scene .scene-controls .scene-control:hover {
-  border-color: #ffb000 !important;
-  color: #ffb000 !important;
-  box-shadow: 0 0 6px rgba(255, 176, 0, 0.3) !important;
+  border-color: var(--nv-accent) !important;
+  color: var(--nv-accent) !important;
+  box-shadow: 0 0 6px var(--nv-glow-030, rgba(255, 176, 0, 0.3)) !important;
 }
 
 #navigation #scene-list .scene:hover {
-  border-color: #554400 !important;
+  border-color: var(--nv-text-dimmed) !important;
   transform: translateY(-2px) !important;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
 }
 
 #navigation #scene-list .scene.view,
 #navigation #scene-list .scene.context {
-  border-color: #ffb000 !important;
-  box-shadow: 0 0 10px rgba(255, 176, 0, 0.35), inset 0 0 10px rgba(255, 176, 0, 0.05) !important;
+  border-color: var(--nv-accent) !important;
+  box-shadow: 0 0 10px var(--nv-glow-035, rgba(255, 176, 0, 0.35)), inset 0 0 10px var(--nv-glow-005, rgba(255, 176, 0, 0.05)) !important;
 }
 
 #navigation #scene-list .scene.view .scene-name,
 #navigation #scene-list .scene.context .scene-name {
   background: rgba(0, 0, 0, 0.9) !important;
-  border-top-color: #ffb000 !important;
-  color: #ffb000 !important;
+  border-top-color: var(--nv-accent) !important;
+  color: var(--nv-accent) !important;
 }
 
 #navigation #scene-list .scene.gm {
-  border-left: 3px solid #ff8c00 !important;
+  border-left: 3px solid var(--nv-accent-dim) !important;
 }
 
 #navigation #scene-list .scene.gm::after {
@@ -460,7 +393,7 @@ option, optgroup {
   left: 2px !important;
   z-index: 3 !important;
   background: rgba(255, 140, 0, 0.85) !important;
-  color: #000000 !important;
+  color: var(--nv-text-black) !important;
   font-size: 8px !important;
   font-family: "Tektur", monospace !important;
   font-weight: bold !important;
@@ -478,21 +411,21 @@ option, optgroup {
 }
 
 .scene-control, .control-tool {
-  background: #0a0a0a !important;
-  border: 1px solid #332200 !important;
-  color: #aa7700 !important;
+  background: var(--nv-bg-nearblack) !important;
+  border: 1px solid var(--nv-border) !important;
+  color: var(--nv-text-hint) !important;
 }
 
 .scene-control:hover, .control-tool:hover {
-  border-color: #ffb000 !important;
-  color: #ffb000 !important;
-  box-shadow: 0 0 6px rgba(255, 176, 0, 0.2) !important;
+  border-color: var(--nv-accent) !important;
+  color: var(--nv-accent) !important;
+  box-shadow: 0 0 6px var(--nv-glow-020, rgba(255, 176, 0, 0.2)) !important;
 }
 
 .scene-control.active, .control-tool.active {
-  border-color: #ffb000 !important;
-  color: #ffb000 !important;
-  box-shadow: 0 0 8px rgba(255, 176, 0, 0.3), inset 0 0 8px rgba(255, 176, 0, 0.1) !important;
+  border-color: var(--nv-accent) !important;
+  color: var(--nv-accent) !important;
+  box-shadow: 0 0 8px var(--nv-glow-030, rgba(255, 176, 0, 0.3)), inset 0 0 8px var(--nv-glow-010, rgba(255, 176, 0, 0.1)) !important;
 }
 
 /* ==========================================================
@@ -515,7 +448,7 @@ option, optgroup {
 .demon-sheet img,
 .item-sheet img,
 .dialog-sheet img {
-  border: 1px solid #332200 !important;
+  border: 1px solid var(--nv-border) !important;
 }
 
 .actor-sheet a:hover,
@@ -525,7 +458,7 @@ option, optgroup {
 .demon-sheet a:hover,
 .item-sheet a:hover,
 .dialog-sheet a:hover {
-  text-shadow: 0 0 8px rgba(255, 176, 0, 0.5) !important;
+  text-shadow: 0 0 8px var(--nv-glow-050, rgba(255, 176, 0, 0.5)) !important;
 }
 
 /* ==========================================================
@@ -546,43 +479,43 @@ option, optgroup {
 
 .navtabs-side {
   background: var(--nv-glass-deep) !important;
-  border-right: 1px solid #332200 !important;
+  border-right: 1px solid var(--nv-border) !important;
 }
 
 .navtabs-side .tab-button {
   background: var(--nv-glass-mid) !important;
-  border: 1px solid #1a1a00 !important;
-  color: #554400 !important;
+  border: 1px solid var(--nv-bg-dark) !important;
+  color: var(--nv-text-dimmed) !important;
 }
 
 .navtabs-side .tab-button.active {
-  background: #ffb000 !important;
-  color: #000000 !important;
-  border-color: #ffb000 !important;
-  box-shadow: 0 0 8px rgba(255, 176, 0, 0.3) !important;
+  background: var(--nv-accent) !important;
+  color: var(--nv-text-black) !important;
+  border-color: var(--nv-accent) !important;
+  box-shadow: 0 0 8px var(--nv-glow-030, rgba(255, 176, 0, 0.3)) !important;
 }
 
 .navtabs-side .tab-button:hover {
-  background: #1a1a00 !important;
-  color: #ffb000 !important;
-  border-color: #ffb000 !important;
+  background: var(--nv-bg-dark) !important;
+  color: var(--nv-accent) !important;
+  border-color: var(--nv-accent) !important;
 }
 
 .profile-header {
   background: var(--nv-glass-mid) !important;
-  border-bottom: 1px solid #332200 !important;
+  border-bottom: 1px solid var(--nv-border) !important;
 }
 
 .profile-header .profile-portrait {
   background: var(--nv-glass-deep) !important;
-  border: 1px solid #332200 !important;
+  border: 1px solid var(--nv-border) !important;
 }
 
 .profile-header .profile-info,
 .profile-header .profile-wound,
 .profile-header .profile-meta {
   background: var(--nv-glass-deep) !important;
-  border: 1px solid #1a1a00 !important;
+  border: 1px solid var(--nv-bg-dark) !important;
 }
 
 .stats-bar {
@@ -591,13 +524,13 @@ option, optgroup {
 
 .stats-bar .stat-block {
   background: var(--nv-glass-mid) !important;
-  border: 1px solid #1a1a00 !important;
+  border: 1px solid var(--nv-bg-dark) !important;
 }
 
 .stats-bar .stat-block input {
-  background: #0d0d0d !important;
-  color: #ffb000 !important;
-  border: 1px solid #332200 !important;
+  background: var(--nv-bg-input) !important;
+  color: var(--nv-accent) !important;
+  border: 1px solid var(--nv-border) !important;
 }
 
 .profile-tab-content,
@@ -615,7 +548,7 @@ option, optgroup {
 .rolefight-tab-content .armor-section,
 .rolefight-tab-content .weapon-section {
   background: var(--nv-glass-deep) !important;
-  border: 1px solid #1a1a00 !important;
+  border: 1px solid var(--nv-bg-dark) !important;
 }
 
 .mook-tab1-content {
@@ -624,7 +557,7 @@ option, optgroup {
 
 .mook-tab1-content .mook-header {
   background: var(--nv-glass-deep) !important;
-  border: 1px solid #332200 !important;
+  border: 1px solid var(--nv-border) !important;
 }
 
 .mook-tab1-content .mook-title-area {
@@ -633,7 +566,7 @@ option, optgroup {
 
 .mook-tab1-content .mook-quick-stats {
   background: var(--nv-glass-mid) !important;
-  border: 1px solid #1a1a00 !important;
+  border: 1px solid var(--nv-bg-dark) !important;
 }
 
 .mook-tab1-content .mook-stats-area,
@@ -641,13 +574,13 @@ option, optgroup {
 .mook-tab1-content .mook-combat-area,
 .mook-tab1-content .mook-crit-area {
   background: var(--nv-glass-deep) !important;
-  border: 1px solid #1a1a00 !important;
+  border: 1px solid var(--nv-bg-dark) !important;
 }
 
 .mook-tab1-content .mook-weapon-list,
 .mook-tab1-content .mook-armor {
   background: var(--nv-glass-mid) !important;
-  border: 1px solid #1a1a00 !important;
+  border: 1px solid var(--nv-bg-dark) !important;
 }
 
 .mook-tab2-content {
@@ -656,12 +589,12 @@ option, optgroup {
 
 .mook-tab2-content .mook-special-area {
   background: var(--nv-glass-deep) !important;
-  border: 1px solid #1a1a00 !important;
+  border: 1px solid var(--nv-bg-dark) !important;
 }
 
 .mook-tab2-content .mook-notes-area {
   background: var(--nv-glass-deep) !important;
-  border: 1px solid #1a1a00 !important;
+  border: 1px solid var(--nv-bg-dark) !important;
 }
 
 .mook-tab2-content .mook-notes-header {
@@ -675,17 +608,17 @@ option, optgroup {
 .profile-header input,
 .mook-tab1-content input,
 .mook-tab2-content input {
-  background: #0d0d0d !important;
-  border: 1px solid #332200 !important;
-  color: #ffb000 !important;
+  background: var(--nv-bg-input) !important;
+  border: 1px solid var(--nv-border) !important;
+  color: var(--nv-accent) !important;
 }
 
 .profile-header select,
 .mook-tab1-content select,
 .mook-tab2-content select {
-  background: #0d0d0d !important;
-  border: 1px solid #332200 !important;
-  color: #ffb000 !important;
+  background: var(--nv-bg-input) !important;
+  border: 1px solid var(--nv-border) !important;
+  color: var(--nv-accent) !important;
 }
 
 /* ==========================================================
@@ -693,7 +626,7 @@ option, optgroup {
    ========================================================== */
 .actor-sheet .left-pane .actor-details {
   background-color: var(--nv-glass-mid) !important;
-  border: 1px solid #332200 !important;
+  border: 1px solid var(--nv-border) !important;
 }
 
 .actor-sheet .left-pane .actor-details * {
@@ -702,18 +635,18 @@ option, optgroup {
 
 .actor-sheet .left-pane .actor-details-image {
   background-color: var(--nv-glass-deep) !important;
-  border: 1px solid #332200 !important;
+  border: 1px solid var(--nv-border) !important;
 }
 
 .actor-sheet .left-pane .actor-details-handle input,
 .actor-sheet .left-pane .actor-details-role input {
-  color: #ffb000 !important;
-  border-bottom: 1px solid #332200 !important;
+  color: var(--nv-accent) !important;
+  border-bottom: 1px solid var(--nv-border) !important;
 }
 
 .actor-sheet .left-pane .actor-details-handle input:focus,
 .actor-sheet .left-pane .actor-details-role input:focus {
-  border-bottom-color: #ffb000 !important;
+  border-bottom-color: var(--nv-accent) !important;
 }
 
 /* HP / Humanity / Death Save */
@@ -724,7 +657,7 @@ option, optgroup {
 .actor-details-improvement-points,
 .actor-details-reputation,
 .actor-details-eurobucks {
-  border: 1px solid #1a1a00 !important;
+  border: 1px solid var(--nv-bg-dark) !important;
 }
 
 .actor-details-hp-title,
@@ -734,8 +667,8 @@ option, optgroup {
 .actor-details-improvement-points-title,
 .actor-details-reputation-title,
 .actor-details-eurobucks-title {
-  border-bottom: 1px solid #332200 !important;
-  color: #aa7700 !important;
+  border-bottom: 1px solid var(--nv-border) !important;
+  color: var(--nv-text-hint) !important;
   font-size: 0.7rem !important;
   text-transform: uppercase !important;
   letter-spacing: 1px !important;
@@ -746,7 +679,7 @@ option, optgroup {
    ========================================================== */
 .actor-sheet .left-pane .actor-stats {
   background-color: var(--nv-glass-mid) !important;
-  border: 1px solid #332200 !important;
+  border: 1px solid var(--nv-border) !important;
 }
 
 .actor-sheet .left-pane .actor-stats * {
@@ -754,26 +687,26 @@ option, optgroup {
 }
 
 .actor-stats-title {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
   font-size: 0.65rem !important;
   text-transform: uppercase !important;
   letter-spacing: 1px !important;
-  border-bottom: 1px solid #1a1a00 !important;
+  border-bottom: 1px solid var(--nv-bg-dark) !important;
 }
 
 .actor-stats-value input,
 .actor-stats-value {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
   font-weight: bold !important;
 }
 
 .actor-stats-of-min,
 .actor-stats-of-max {
-  color: #554400 !important;
+  color: var(--nv-text-dimmed) !important;
 }
 
 .actor-stats-of-sep {
-  color: #332200 !important;
+  color: var(--nv-border) !important;
 }
 
 /* ==========================================================
@@ -782,22 +715,22 @@ option, optgroup {
 .min-of-max-container input[type="number"] {
   background-color: transparent !important;
   border: none !important;
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .min-of-max-container .of {
-  color: #554400 !important;
+  color: var(--nv-text-dimmed) !important;
 }
 
 .min-of-max-container .of-stat {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
 }
 
 /* ==========================================================
    11. WOUND STATE
    ========================================================== */
 .actor-details-wound-state-value {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 /* Death save */
@@ -806,7 +739,7 @@ option, optgroup {
 }
 
 .actor-details-death-save a {
-  color: #ff8c00 !important;
+  color: var(--nv-accent-dim) !important;
 }
 
 /* ==========================================================
@@ -815,47 +748,47 @@ option, optgroup {
 .actor-details-improvement-points-value,
 .actor-details-reputation-value,
 .actor-details-eurobucks-value {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
   font-weight: bold !important;
 }
 
 .actor-details-improvement-points-actions a,
 .actor-details-reputation-actions a,
 .actor-details-eurobucks-ledger a {
-  color: #ff8c00 !important;
+  color: var(--nv-accent-dim) !important;
 }
 
 .actor-details-reputation-facedown a {
-  color: #ff8c00 !important;
+  color: var(--nv-accent-dim) !important;
 }
 
 /* ==========================================================
    13. CONTENT FILTER
    ========================================================== */
 .actor-details-filter-box .filter-contents {
-  background: #0d0d0d !important;
-  border: 1px solid #332200 !important;
-  color: #ffb000 !important;
+  background: var(--nv-bg-input) !important;
+  border: 1px solid var(--nv-border) !important;
+  color: var(--nv-accent) !important;
 }
 
 .actor-details-filter-box .filter-contents::placeholder {
-  color: #554400 !important;
+  color: var(--nv-text-dimmed) !important;
 }
 
 .actor-details-filter-actions {
-  color: #ff8c00 !important;
+  color: var(--nv-accent-dim) !important;
 }
 
 /* ==========================================================
    14. RIGHT / BOTTOM PANE — BORDERS
    ========================================================== */
 .actor-sheet .right-pane .right-content-section {
-  border-color: #332200 !important;
+  border-color: var(--nv-border) !important;
   background-color: var(--nv-glass-mid) !important;
 }
 
 .actor-sheet .bottom-pane .bottom-content-section {
-  border-color: #332200 !important;
+  border-color: var(--nv-border) !important;
   background-color: var(--nv-glass-mid) !important;
 }
 
@@ -863,27 +796,27 @@ option, optgroup {
    15. TABS
    ========================================================== */
 .tab-label {
-  background-color: #0d0d0d !important;
-  color: #554400 !important;
+  background-color: var(--nv-bg-input) !important;
+  color: var(--nv-text-dimmed) !important;
   border: 1px solid transparent !important;
-  border-bottom: 1px solid #332200 !important;
+  border-bottom: 1px solid var(--nv-border) !important;
 }
 
 .tab-label.active {
-  background-color: #ffb000 !important;
-  color: #000000 !important;
-  border-color: #ffb000 !important;
-  box-shadow: 0 0 8px rgba(255, 176, 0, 0.3) !important;
+  background-color: var(--nv-accent) !important;
+  color: var(--nv-text-black) !important;
+  border-color: var(--nv-accent) !important;
+  box-shadow: 0 0 8px var(--nv-glow-030, rgba(255, 176, 0, 0.3)) !important;
 }
 
 .tab-label:hover {
-  background-color: #1a1a00 !important;
-  color: #ffb000 !important;
-  border-color: #ffb000 !important;
+  background-color: var(--nv-bg-dark) !important;
+  color: var(--nv-accent) !important;
+  border-color: var(--nv-accent) !important;
 }
 
 .tab-label .tab-highlight {
-  color: #ff8c00 !important;
+  color: var(--nv-accent-dim) !important;
 }
 
 .tab-pink-underlay {
@@ -891,7 +824,7 @@ option, optgroup {
 }
 
 .cpr-tabs .item.active {
-  text-shadow: 0 0 8px rgba(255, 176, 0, 0.5) !important;
+  text-shadow: 0 0 8px var(--nv-glow-050, rgba(255, 176, 0, 0.5)) !important;
 }
 
 /* ==========================================================
@@ -919,9 +852,9 @@ option, optgroup {
 }
 
 .skills-tab .skills-container .text-pill {
-  background-color: #1a1a00 !important;
-  color: #ffb000 !important;
-  border: 1px solid #332200 !important;
+  background-color: var(--nv-bg-dark) !important;
+  color: var(--nv-accent) !important;
+  border: 1px solid var(--nv-border) !important;
 }
 
 .skill-level input,
@@ -929,11 +862,11 @@ option, optgroup {
 .skill-mod-value input {
   background: transparent !important;
   border: none !important;
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .skill-favorite {
-  color: #ff8c00 !important;
+  color: var(--nv-accent-dim) !important;
 }
 
 /* ==========================================================
@@ -949,40 +882,40 @@ option, optgroup {
 
 .items-header {
   background-color: var(--nv-glass-deep) !important;
-  color: #ffb000 !important;
-  border-bottom: 1px solid #ffb000 !important;
+  color: var(--nv-accent) !important;
+  border-bottom: 1px solid var(--nv-accent) !important;
 }
 
 .items-header span {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
   font-size: 0.7rem !important;
   text-transform: uppercase !important;
   letter-spacing: 1px !important;
 }
 
 .gear-name {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .gear-tab .gear-amount .gear-amount-value .gear-amount-input {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
   background: transparent !important;
-  border: 1px solid #332200 !important;
+  border: 1px solid var(--nv-border) !important;
 }
 
 .gear-tab .gear-actions .fa-trash-can {
-  color: #ff8c00 !important;
+  color: var(--nv-accent-dim) !important;
 }
 
 /* ==========================================================
    18. CYBERWARE TAB
    ========================================================== */
 .cyberware-tab .icon-button {
-  color: #ff8c00 !important;
+  color: var(--nv-accent-dim) !important;
 }
 
 .cyberware-list .item {
-  border-bottom: 1px solid #1a1a00 !important;
+  border-bottom: 1px solid var(--nv-bg-dark) !important;
 }
 
 /* ==========================================================
@@ -990,8 +923,8 @@ option, optgroup {
    ========================================================== */
 .effects-list .effects-category {
   background-color: var(--nv-glass-deep) !important;
-  color: #ffb000 !important;
-  border-bottom: 1px solid #ffb000 !important;
+  color: var(--nv-accent) !important;
+  border-bottom: 1px solid var(--nv-accent) !important;
 }
 
 .effects-list li:nth-child(even) {
@@ -1004,11 +937,11 @@ option, optgroup {
 
 .effects-list .item-header {
   background-color: var(--nv-glass-deep) !important;
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .effect-source {
-  color: #554400 !important;
+  color: var(--nv-text-dimmed) !important;
 }
 
 /* ==========================================================
@@ -1019,17 +952,17 @@ option, optgroup {
 }
 
 .role-tab .role-tab-content .role-item .fa-trash-can {
-  color: #ff8c00 !important;
+  color: var(--nv-accent-dim) !important;
 }
 
 .role-tab .role-tab-content .role-item .role-name,
 .role-tab .role-tab-content .role-item .ability-name {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .role-tab .role-tab-content .role-item .role-rank,
 .role-tab .role-tab-content .role-item .ability-rank {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
 }
 
 /* ==========================================================
@@ -1037,8 +970,8 @@ option, optgroup {
    ========================================================== */
 .lifepath-tab .section-name {
   background-color: var(--nv-glass-deep) !important;
-  color: #ffb000 !important;
-  border-bottom: 1px solid #ffb000 !important;
+  color: var(--nv-accent) !important;
+  border-bottom: 1px solid var(--nv-accent) !important;
 }
 
 .lifepath-list li:nth-child(even) {
@@ -1058,8 +991,8 @@ option, optgroup {
 
 .fight-tab .section-name {
   background-color: var(--nv-glass-deep) !important;
-  color: #ffb000 !important;
-  border-bottom: 1px solid #ffb000 !important;
+  color: var(--nv-accent) !important;
+  border-bottom: 1px solid var(--nv-accent) !important;
 }
 
 .fight-tab .fight-tab > div {
@@ -1070,94 +1003,94 @@ option, optgroup {
    23. WEAPON GRID
    ========================================================== */
 .weapon-grid {
-  border: 1px solid #1a1a00 !important;
+  border: 1px solid var(--nv-bg-dark) !important;
   margin: 0.15rem !important;
   background: var(--nv-glass-mid) !important;
 }
 
 .weapon-name a {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .weapon-ammo {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
 }
 
 .weapon-info .text-pill {
-  background-color: #1a1a00 !important;
-  color: #ffb000 !important;
-  border: 1px solid #332200 !important;
+  background-color: var(--nv-bg-dark) !important;
+  color: var(--nv-accent) !important;
+  border: 1px solid var(--nv-border) !important;
   font-size: 0.6rem !important;
 }
 
 .weapon-mode .fire-checkbox {
-  color: #554400 !important;
+  color: var(--nv-text-dimmed) !important;
 }
 
 .weapon-mode .fire-checkbox.active {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .weapon-attack a,
 .weapon-damage a {
-  color: #ff8c00 !important;
+  color: var(--nv-accent-dim) !important;
 }
 
 .weapon-attack a:hover,
 .weapon-damage a:hover {
-  text-shadow: 0 0 8px rgba(255, 176, 0, 0.5) !important;
+  text-shadow: 0 0 8px var(--nv-glow-050, rgba(255, 176, 0, 0.5)) !important;
 }
 
 .weapon-image i {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 /* ==========================================================
    24. ARMOR GRID
    ========================================================== */
 .armor-grid {
-  border: 1px solid #1a1a00 !important;
+  border: 1px solid var(--nv-bg-dark) !important;
   margin: 0.15rem !important;
   background: var(--nv-glass-mid) !important;
 }
 
 .armor-name a {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .armor-location {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
   font-size: 0.7rem !important;
 }
 
 .armor-type {
-  color: #554400 !important;
+  color: var(--nv-text-dimmed) !important;
 }
 
 .armor-image i {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .armor-stats {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 /* ==========================================================
    25. FIGHT TAB — NETSPACE
    ========================================================== */
 .fight-tab .cyberdeck-installed-section .items-header {
-  background-color: #1a1a00 !important;
-  border-bottom: 1px solid #ff8c00 !important;
+  background-color: var(--nv-bg-dark) !important;
+  border-bottom: 1px solid var(--nv-accent-dim) !important;
 }
 
 .fight-tab .cyberdeck-rezzed-section .items-header {
-  background-color: #1a1a00 !important;
-  border-bottom: 1px solid #ff8c00 !important;
+  background-color: var(--nv-bg-dark) !important;
+  border-bottom: 1px solid var(--nv-accent-dim) !important;
 }
 
 .installed-program-name,
 .rezzed-program-name {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .installed-program-attack,
@@ -1167,38 +1100,38 @@ option, optgroup {
 .rezzed-program-atk,
 .rezzed-program-def,
 .rezzed-program-rez {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
 }
 
 .cyberdeck-installed-software-list .fa-folder-minus {
-  color: #ff8c00 !important;
+  color: var(--nv-accent-dim) !important;
 }
 
 .fight-tab .select-net-role {
-  background-color: #0d0d0d !important;
-  border: 1px solid #332200 !important;
-  color: #ffb000 !important;
+  background-color: var(--nv-bg-input) !important;
+  border: 1px solid var(--nv-border) !important;
+  color: var(--nv-accent) !important;
 }
 
 /* ==========================================================
    26. INJURIES GRID
    ========================================================== */
 .injuries-grid {
-  border: 1px solid #1a1a00 !important;
+  border: 1px solid var(--nv-bg-dark) !important;
   background: var(--nv-glass-mid) !important;
 }
 
 .injuries-name {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .injuries-desc {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
   font-size: 0.75rem !important;
 }
 
 .injuries-actions a {
-  color: #ff8c00 !important;
+  color: var(--nv-accent-dim) !important;
 }
 
 /* ==========================================================
@@ -1209,44 +1142,44 @@ option, optgroup {
 }
 
 .mook-sheet .mook-name {
-  color: #ffb000 !important;
-  border-right: 1px solid #332200 !important;
+  color: var(--nv-accent) !important;
+  border-right: 1px solid var(--nv-border) !important;
 }
 
 .mook-sheet input {
   background: transparent !important;
   border: none !important;
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .mook-sheet .mook-stats-and-derived {
-  border: 1px solid #332200 !important;
+  border: 1px solid var(--nv-border) !important;
 }
 
 .mook-stats .mook-stat {
-  border: 1px solid #1a1a00 !important;
+  border: 1px solid var(--nv-bg-dark) !important;
 }
 
 .mook-stat .rollable {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
 }
 
 .mook-stat .rollable:hover {
-  color: #ffb000 !important;
-  text-shadow: 0 0 6px rgba(255, 176, 0, 0.3) !important;
+  color: var(--nv-accent) !important;
+  text-shadow: 0 0 6px var(--nv-glow-030, rgba(255, 176, 0, 0.3)) !important;
 }
 
 .mook-stat .block-data input {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .mook-hp .value,
 .mook-hp .max {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .mook-hp .of {
-  color: #554400 !important;
+  color: var(--nv-text-dimmed) !important;
 }
 
 .mook-wounded-stat {
@@ -1254,27 +1187,27 @@ option, optgroup {
 }
 
 .mook-deathsave a {
-  color: #ff8c00 !important;
+  color: var(--nv-accent-dim) !important;
 }
 
 .mook-gear, .mook-skills, .mook-special, .mook-crit, .mook-notes {
-  border: 1px solid #1a1a00 !important;
+  border: 1px solid var(--nv-bg-dark) !important;
   margin-top: 0.25rem !important;
 }
 
 .mook-weapon-list .item,
 .mook-armor .item {
-  border-bottom: 1px solid #1a1a00 !important;
+  border-bottom: 1px solid var(--nv-bg-dark) !important;
 }
 
 .mook-notes-content {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
 }
 
 /* Mook limited sheet */
 .mook-sheet-limited {
   background: var(--nv-glass-mid) !important;
-  border: 1px solid #ffb000 !important;
+  border: 1px solid var(--nv-accent) !important;
 }
 
 /* ==========================================================
@@ -1285,7 +1218,7 @@ option, optgroup {
 }
 
 .container-sheet .left-pane .image-block {
-  border: 1px solid #332200 !important;
+  border: 1px solid var(--nv-border) !important;
 }
 
 .container-sheet .left-pane .name-section,
@@ -1293,30 +1226,30 @@ option, optgroup {
 .container-sheet .left-pane .settings-gm-section,
 .container-sheet .left-pane .eurobucks-section {
   background-color: var(--nv-glass-mid) !important;
-  border: 1px solid #1a1a00 !important;
+  border: 1px solid var(--nv-bg-dark) !important;
 }
 
 .container-sheet .left-pane .name-section input {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .container-sheet .left-pane .eurobucks-section .eurobucks-label {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .container-sheet .right-pane {
   background-color: var(--nv-glass-mid) !important;
-  border: 1px solid #332200 !important;
+  border: 1px solid var(--nv-border) !important;
 }
 
 .container-sheet .fa-trash-can {
-  color: #ff8c00 !important;
+  color: var(--nv-accent-dim) !important;
 }
 
 .container-sheet select {
-  background: #0d0d0d !important;
-  border: 1px solid #332200 !important;
-  color: #ffb000 !important;
+  background: var(--nv-bg-input) !important;
+  border: 1px solid var(--nv-border) !important;
+  color: var(--nv-accent) !important;
 }
 
 /* ==========================================================
@@ -1327,13 +1260,13 @@ option, optgroup {
 }
 
 .blackice-sheet input {
-  background-color: #0d0d0d !important;
-  border: 1px solid #332200 !important;
-  color: #ffb000 !important;
+  background-color: var(--nv-bg-input) !important;
+  border: 1px solid var(--nv-border) !important;
+  color: var(--nv-accent) !important;
 }
 
 .blackice-sheet .blackice-info {
-  border: 1px solid #1a1a00 !important;
+  border: 1px solid var(--nv-bg-dark) !important;
 }
 
 .blackice-sheet .blackice-info div {
@@ -1346,32 +1279,32 @@ option, optgroup {
 
 .blackice-sheet .blackice-stats div {
   background-color: var(--nv-glass-mid) !important;
-  border: 1px solid #1a1a00 !important;
+  border: 1px solid var(--nv-bg-dark) !important;
 }
 
 .blackice-stats-title {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
   font-size: 0.65rem !important;
   text-transform: uppercase !important;
   letter-spacing: 1px !important;
 }
 
 .blackice-stats-value input {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
   text-align: center !important;
 }
 
 .blackice-sheet .blackice-notes {
   background-color: var(--nv-glass-mid) !important;
-  border: 1px solid #1a1a00 !important;
+  border: 1px solid var(--nv-bg-dark) !important;
 }
 
 .blackice-actions a {
-  color: #ff8c00 !important;
+  color: var(--nv-accent-dim) !important;
 }
 
 .blackice-sheet .blackice-image {
-  border: 1px solid #332200 !important;
+  border: 1px solid var(--nv-border) !important;
 }
 
 /* ==========================================================
@@ -1382,13 +1315,13 @@ option, optgroup {
 }
 
 .demon-sheet input {
-  background-color: #0d0d0d !important;
-  border: 1px solid #332200 !important;
-  color: #ffb000 !important;
+  background-color: var(--nv-bg-input) !important;
+  border: 1px solid var(--nv-border) !important;
+  color: var(--nv-accent) !important;
 }
 
 .demon-stats-title {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
   font-size: 0.65rem !important;
   text-transform: uppercase !important;
   letter-spacing: 1px !important;
@@ -1396,16 +1329,16 @@ option, optgroup {
 
 .demon-stats div {
   background-color: var(--nv-glass-mid) !important;
-  border: 1px solid #1a1a00 !important;
+  border: 1px solid var(--nv-bg-dark) !important;
 }
 
 .demon-stats-value input {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .demon-notes {
   background-color: var(--nv-glass-mid) !important;
-  border: 1px solid #1a1a00 !important;
+  border: 1px solid var(--nv-bg-dark) !important;
 }
 
 /* ==========================================================
@@ -1413,7 +1346,7 @@ option, optgroup {
    ========================================================== */
 .item-sheet .item-top-pane {
   background-color: var(--nv-glass-mid) !important;
-  border-bottom: 1px solid #332200 !important;
+  border-bottom: 1px solid var(--nv-border) !important;
 }
 
 .item-sheet .item-top-pane .item-details {
@@ -1421,16 +1354,16 @@ option, optgroup {
 }
 
 .item-details-name input {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
   font-size: 1.2rem !important;
 }
 
 .item-details-info {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
 }
 
 .item-details-source {
-  color: #554400 !important;
+  color: var(--nv-text-dimmed) !important;
   font-size: 0.75rem !important;
 }
 
@@ -1439,11 +1372,11 @@ option, optgroup {
 }
 
 .item-sheet .item-bottom-pane .item-bottom-content-section {
-  border-color: #332200 !important;
+  border-color: var(--nv-border) !important;
 }
 
 .item-image i {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 /* ==========================================================
@@ -1455,31 +1388,31 @@ option, optgroup {
 
 .item-description-tab .item-summary-section {
   background-color: var(--nv-glass-mid) !important;
-  border: 1px solid #1a1a00 !important;
+  border: 1px solid var(--nv-bg-dark) !important;
 }
 
 .item-description-tab .item-description-section {
   background-color: var(--nv-glass-mid) !important;
-  border: 1px solid #1a1a00 !important;
+  border: 1px solid var(--nv-bg-dark) !important;
 }
 
 .summary-name {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
   font-size: 0.7rem !important;
   text-transform: uppercase !important;
   letter-spacing: 1px !important;
 }
 
 .summary-value {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .summary-effect-name {
-  color: #ff8c00 !important;
+  color: var(--nv-accent-dim) !important;
 }
 
 .summary-effect-value {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 /* ==========================================================
@@ -1490,20 +1423,20 @@ option, optgroup {
 }
 
 .item-settings-section .setting-name {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
   font-size: 0.75rem !important;
 }
 
 .item-settings-section .setting-value {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .item-checkbox {
-  color: #554400 !important;
+  color: var(--nv-text-dimmed) !important;
 }
 
 .item-checkbox.active {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 /* ==========================================================
@@ -1517,9 +1450,9 @@ option, optgroup {
    35. TEXT PILL / BADGE
    ========================================================== */
 .text-pill {
-  background-color: #1a1a00 !important;
-  color: #ffb000 !important;
-  border: 1px solid #332200 !important;
+  background-color: var(--nv-bg-dark) !important;
+  color: var(--nv-accent) !important;
+  border: 1px solid var(--nv-border) !important;
   font-size: 0.6rem !important;
   letter-spacing: 0.5px !important;
   text-transform: uppercase !important;
@@ -1534,26 +1467,26 @@ option, optgroup {
   font-family: "Tektur", monospace !important;
   background: rgba(10, 10, 10, 0.6) !important;
   backdrop-filter: var(--nv-glass-blur) !important;
-  color: #ffb000 !important;
-  border: 1px solid #332200 !important;
-  border-left: 3px solid #ffb000 !important;
-  box-shadow: 0 0 6px rgba(255, 176, 0, 0.08) !important;
+  color: var(--nv-accent) !important;
+  border: 1px solid var(--nv-border) !important;
+  border-left: 3px solid var(--nv-accent) !important;
+  box-shadow: 0 0 6px var(--nv-glow-008, rgba(255, 176, 0, 0.08)) !important;
 }
 
 .chat-message .message-header,
 .chat-message.whisper .message-header,
 .chat-message.emote .message-header {
-  color: #ffb000 !important;
-  border-bottom: 1px solid #1a1a00 !important;
+  color: var(--nv-accent) !important;
+  border-bottom: 1px solid var(--nv-bg-dark) !important;
 }
 
 .chat-message .message-header .message-sender {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
   font-weight: bold !important;
 }
 
 .chat-message .message-header .message-metadata {
-  color: #554400 !important;
+  color: var(--nv-text-dimmed) !important;
 }
 
 .chat-message img,
@@ -1565,7 +1498,7 @@ option, optgroup {
 .chat-message footer,
 .chat-message.whisper footer,
 .chat-message.emote footer {
-  color: #554400 !important;
+  color: var(--nv-text-dimmed) !important;
 }
 
 /* ==========================================================
@@ -1576,7 +1509,7 @@ option, optgroup {
 }
 
 .cpr-block {
-  background-color: #1a1a00 !important;
+  background-color: var(--nv-bg-dark) !important;
   position: relative !important;
   display: flex !important;
   flex-direction: column !important;
@@ -1595,7 +1528,7 @@ option, optgroup {
 }
 
 .rollcard .text-center.text-padding-top.text-normal.text-semi {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 /* ==========================================================
@@ -1603,47 +1536,47 @@ option, optgroup {
    ========================================================== */
 .d10-rollcard-data,
 .d6-rollcard-data {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .d10-dice-div,
 .d6-dice-div {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .d10-number-div,
 .d6-number-div {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
   font-size: 2.5rem !important;
-  text-shadow: 0 0 8px rgba(255, 176, 0, 0.3) !important;
+  text-shadow: 0 0 8px var(--nv-glow-030, rgba(255, 176, 0, 0.3)) !important;
 }
 
 .d10-number-div a,
 .d6-number-div a {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .d10-number-div a:hover,
 .d6-number-div a:hover {
-  text-shadow: 0 0 12px rgba(255, 176, 0, 0.5) !important;
+  text-shadow: 0 0 12px var(--nv-glow-050, rgba(255, 176, 0, 0.5)) !important;
 }
 
 .d10-data-div,
 .d6-data-div {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
   font-size: 0.75rem !important;
 }
 
 .d10-data-details,
 .d6-data-details {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
 }
 
 /* ==========================================================
    39. ROLL CARD SUBTITLE
    ========================================================== */
 .rollcard-subtitle-center {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
   font-size: 0.7rem !important;
   text-transform: uppercase !important;
   letter-spacing: 1px !important;
@@ -1651,7 +1584,7 @@ option, optgroup {
 
 .rollcard-subtitle-right a,
 .rollcard-subtitle-2-center {
-  color: #ff8c00 !important;
+  color: var(--nv-accent-dim) !important;
 }
 
 .rollcard-subtitle-2-center {
@@ -1675,12 +1608,12 @@ option, optgroup {
    41. CHAT MODIFIERS
    ========================================================== */
 .rollcard-modifiers {
-  color: #554400 !important;
+  color: var(--nv-text-dimmed) !important;
   font-size: 0.7rem !important;
 }
 
 .rollcard-modifiers span {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
 }
 
 /* ==========================================================
@@ -1690,100 +1623,100 @@ a.applyDamage,
 a.rollDamage,
 a.reverseDamage,
 a.displayInjury {
-  color: #ff8c00 !important;
-  border: 1px solid #332200 !important;
+  color: var(--nv-accent-dim) !important;
+  border: 1px solid var(--nv-border) !important;
   padding: 0.125rem 0.375rem !important;
-  background: #1a1a00 !important;
+  background: var(--nv-bg-dark) !important;
 }
 
 a.applyDamage:hover,
 a.rollDamage:hover,
 a.reverseDamage:hover,
 a.displayInjury:hover {
-  color: #ffb000 !important;
-  border-color: #ffb000 !important;
-  box-shadow: 0 0 6px rgba(255, 176, 0, 0.3) !important;
+  color: var(--nv-accent) !important;
+  border-color: var(--nv-accent) !important;
+  box-shadow: 0 0 6px var(--nv-glow-030, rgba(255, 176, 0, 0.3)) !important;
   text-shadow: none !important;
 }
 
 a.inline-roll {
-  background: #1a1a00 !important;
-  color: #ffb000 !important;
-  border: 1px solid #332200 !important;
+  background: var(--nv-bg-dark) !important;
+  color: var(--nv-accent) !important;
+  border: 1px solid var(--nv-border) !important;
 }
 
 a.inline-roll .dice-tooltip {
   background: var(--nv-glass-mid) !important;
-  color: #ffb000 !important;
-  border: 1px solid #332200 !important;
+  color: var(--nv-accent) !important;
+  border: 1px solid var(--nv-border) !important;
 }
 
 a.inline-roll .dice-tooltip .dice-rolls .roll {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 /* ==========================================================
    43. CRITICAL INJURY / HUMANITY CARDS
    ========================================================== */
 .humanity-static-div {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
   font-style: italic !important;
 }
 
 .rollcard-critinjury-icon {
-  border: 1px solid #332200 !important;
+  border: 1px solid var(--nv-border) !important;
 }
 
 .rollcard-critinjury-data {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 /* ==========================================================
    44. CHAT INPUT & CONTROLS
    ========================================================== */
 #chat-message {
-  background: #0d0d0d !important;
-  border: 1px solid #332200 !important;
-  color: #ffb000 !important;
+  background: var(--nv-bg-input) !important;
+  border: 1px solid var(--nv-border) !important;
+  color: var(--nv-accent) !important;
 }
 
 #chat-message:focus {
-  border-color: #ffb000 !important;
-  box-shadow: 0 0 6px rgba(255, 176, 0, 0.2) !important;
+  border-color: var(--nv-accent) !important;
+  box-shadow: 0 0 6px var(--nv-glow-020, rgba(255, 176, 0, 0.2)) !important;
 }
 
 #chat-controls .roll-type-select {
-  color: #ffb000 !important;
-  background: #0d0d0d !important;
-  border: 1px solid #332200 !important;
+  color: var(--nv-accent) !important;
+  background: var(--nv-bg-input) !important;
+  border: 1px solid var(--nv-border) !important;
 }
 
 #chat-controls .control-buttons {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 #chat-controls .control-buttons a {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
 }
 
 #chat-controls .control-buttons a:hover {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 #chat-form textarea {
-  background: #0d0d0d !important;
-  color: #ffb000 !important;
-  border: 1px solid #332200 !important;
+  background: var(--nv-bg-input) !important;
+  color: var(--nv-accent) !important;
+  border: 1px solid var(--nv-border) !important;
 }
 
 #chat-form textarea:focus {
-  border-color: #ffb000 !important;
+  border-color: var(--nv-accent) !important;
 }
 
 .chat-mode-indicator {
-  border-color: #332200 !important;
+  border-color: var(--nv-border) !important;
   background: var(--nv-glass-mid) !important;
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
 }
 
 /* ==========================================================
@@ -1791,32 +1724,32 @@ a.inline-roll .dice-tooltip .dice-rolls .roll {
    ========================================================== */
 .dialog-sheet {
   background-color: var(--nv-glass-mid) !important;
-  border: 1px solid #332200 !important;
+  border: 1px solid var(--nv-border) !important;
 }
 
 .dialog-header {
-  color: #ffb000 !important;
-  border-bottom: 1px solid #332200 !important;
+  color: var(--nv-accent) !important;
+  border-bottom: 1px solid var(--nv-border) !important;
   font-weight: bold !important;
   text-transform: uppercase !important;
   letter-spacing: 1px !important;
 }
 
 .dialog-grid {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .dialog-sheet hr {
   border: none !important;
   height: 1px !important;
-  background-image: linear-gradient(to right, #000000, #ffb000, #000000) !important;
+  background-image: linear-gradient(to right, var(--nv-text-black), var(--nv-accent), var(--nv-text-black)) !important;
 }
 
 /* ==========================================================
    46. DIALOG ITEMS
    ========================================================== */
 .dialog-list {
-  border: 1px solid #1a1a00 !important;
+  border: 1px solid var(--nv-bg-dark) !important;
   background: var(--nv-glass-mid) !important;
 }
 
@@ -1830,30 +1763,30 @@ a.inline-roll .dice-tooltip .dice-rolls .roll {
 
 .dialog-list .dialog-item.dialog-item-header {
   background-color: var(--nv-glass-deep) !important;
-  color: #ffb000 !important;
-  border-bottom: 1px solid #ffb000 !important;
+  color: var(--nv-accent) !important;
+  border-bottom: 1px solid var(--nv-accent) !important;
 }
 
 .dialog-item-name {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .dialog-item-detail {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
 }
 
 .dialog-item-input {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .dialog-item-input input[type="checkbox"] {
-  accent-color: #ffb000 !important;
+  accent-color: var(--nv-accent) !important;
 }
 
 .dialog-item-input select {
-  background: #0d0d0d !important;
-  border: 1px solid #332200 !important;
-  color: #ffb000 !important;
+  background: var(--nv-bg-input) !important;
+  border: 1px solid var(--nv-border) !important;
+  color: var(--nv-accent) !important;
 }
 
 /* ==========================================================
@@ -1862,59 +1795,59 @@ a.inline-roll .dice-tooltip .dice-rolls .roll {
 .dialog-footer .cpr-dialog-button,
 .dialog .dialog-buttons button,
 .dialog .dialog-buttons button.default {
-  background: #1a1a00 !important;
-  border: 1px solid #ffb000 !important;
-  color: #ffb000 !important;
+  background: var(--nv-bg-dark) !important;
+  border: 1px solid var(--nv-accent) !important;
+  color: var(--nv-accent) !important;
 }
 
 .dialog-footer .cpr-dialog-button:hover,
 .dialog .dialog-buttons button:hover {
-  background: #332200 !important;
-  box-shadow: 0 0 8px rgba(255, 176, 0, 0.3) !important;
+  background: var(--nv-border) !important;
+  box-shadow: 0 0 8px var(--nv-glow-030, rgba(255, 176, 0, 0.3)) !important;
 }
 
 /* ==========================================================
    48. SITUATIONAL MODIFIERS (DIALOGS)
    ========================================================== */
 .situational-mods {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .situational-mods li {
-  border: 1px solid #1a1a00 !important;
+  border: 1px solid var(--nv-bg-dark) !important;
   background: var(--nv-glass-mid) !important;
 }
 
 .situational-mod-name {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .situational-mod-value {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
 }
 
 .situational-mod-input input {
   background: transparent !important;
-  border: 1px solid #332200 !important;
-  color: #ffb000 !important;
+  border: 1px solid var(--nv-border) !important;
+  color: var(--nv-accent) !important;
 }
 
 .mod-selected {
-  background-color: #1a1a00 !important;
+  background-color: var(--nv-bg-dark) !important;
 }
 
 .total-mod-value {
-  color: #ff8c00 !important;
+  color: var(--nv-accent-dim) !important;
   font-weight: bold !important;
 }
 
 .toggle-show-mods {
-  color: #ff8c00 !important;
+  color: var(--nv-accent-dim) !important;
 }
 
 .toggle-show-mods:hover {
-  color: #ffb000 !important;
-  text-shadow: 0 0 6px rgba(255, 176, 0, 0.3) !important;
+  color: var(--nv-accent) !important;
+  text-shadow: 0 0 6px var(--nv-glow-030, rgba(255, 176, 0, 0.3)) !important;
 }
 
 /* ==========================================================
@@ -1927,12 +1860,12 @@ a.inline-roll .dice-tooltip .dice-rolls .roll {
 .ledger-info,
 .ledger-edit {
   background-color: var(--nv-glass-mid) !important;
-  border: 1px solid #1a1a00 !important;
+  border: 1px solid var(--nv-bg-dark) !important;
 }
 
 .ledger-history {
   background-color: var(--nv-glass-mid) !important;
-  border: 1px solid #1a1a00 !important;
+  border: 1px solid var(--nv-bg-dark) !important;
 }
 
 .ledger-history li:nth-child(even) {
@@ -1944,27 +1877,27 @@ a.inline-roll .dice-tooltip .dice-rolls .roll {
 }
 
 .ledger-transaction {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .ledger-reason {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
 }
 
 .ledger-number {
-  color: #554400 !important;
+  color: var(--nv-text-dimmed) !important;
 }
 
 .ledger-edit-modify {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .ledger-edit-reason {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
 }
 
 .ledger-history-list .fa-trash-can {
-  color: #ff8c00 !important;
+  color: var(--nv-accent-dim) !important;
 }
 
 /* ==========================================================
@@ -1972,24 +1905,24 @@ a.inline-roll .dice-tooltip .dice-rolls .roll {
    ========================================================== */
 .progress-container {
   background: var(--nv-glass-dark) !important;
-  border: 1px solid #332200 !important;
+  border: 1px solid var(--nv-border) !important;
 }
 
 .progress-bar {
-  background-color: #ffb000 !important;
+  background-color: var(--nv-accent) !important;
   opacity: 0.4 !important;
 }
 
 .progress-label-container {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .progress-count {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
 }
 
 .progress-percent-container {
-  color: #554400 !important;
+  color: var(--nv-text-dimmed) !important;
 }
 
 /* ==========================================================
@@ -1997,33 +1930,33 @@ a.inline-roll .dice-tooltip .dice-rolls .roll {
    ========================================================== */
 #tooltip {
   font-family: "Tektur", monospace !important;
-  border: 1px solid #ffb000 !important;
+  border: 1px solid var(--nv-accent) !important;
   background: var(--nv-glass-deep) !important;
   backdrop-filter: var(--nv-glass-blur) !important;
-  color: #ffb000 !important;
-  box-shadow: 0 0 8px rgba(255, 176, 0, 0.3) !important;
+  color: var(--nv-accent) !important;
+  box-shadow: 0 0 8px var(--nv-glow-030, rgba(255, 176, 0, 0.3)) !important;
 }
 
 /* ==========================================================
    52. COMPENDIUM
    ========================================================== */
 #compendium h3 {
-  color: #ffb000 !important;
-  border-bottom: 1px solid #ffb000 !important;
-  text-shadow: 0 0 4px rgba(255, 176, 0, 0.2) !important;
+  color: var(--nv-accent) !important;
+  border-bottom: 1px solid var(--nv-accent) !important;
+  text-shadow: 0 0 4px var(--nv-glow-020, rgba(255, 176, 0, 0.2)) !important;
 }
 
 #compendium ol.compendium-list {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
 }
 
 .compendium-folder-header {
   background: var(--nv-glass-deep) !important;
-  border-bottom: 1px solid #332200 !important;
+  border-bottom: 1px solid var(--nv-border) !important;
 }
 
 .compendium-folder-header .create-folder {
-  color: #ff8c00 !important;
+  color: var(--nv-accent-dim) !important;
 }
 
 /* ==========================================================
@@ -2031,29 +1964,29 @@ a.inline-roll .dice-tooltip .dice-rolls .roll {
    ========================================================== */
 .control-icon {
   background: var(--nv-glass-mid) !important;
-  border: 1px solid #332200 !important;
-  color: #ffb000 !important;
+  border: 1px solid var(--nv-border) !important;
+  color: var(--nv-accent) !important;
 }
 
 .control-icon:hover {
-  border-color: #ffb000 !important;
-  box-shadow: 0 0 6px rgba(255, 176, 0, 0.2) !important;
+  border-color: var(--nv-accent) !important;
+  box-shadow: 0 0 6px var(--nv-glow-020, rgba(255, 176, 0, 0.2)) !important;
 }
 
 .control-icon.active {
-  border-color: #ffb000 !important;
-  box-shadow: 0 0 8px rgba(255, 176, 0, 0.3), inset 0 0 8px rgba(255, 176, 0, 0.1) !important;
+  border-color: var(--nv-accent) !important;
+  box-shadow: 0 0 8px var(--nv-glow-030, rgba(255, 176, 0, 0.3)), inset 0 0 8px var(--nv-glow-010, rgba(255, 176, 0, 0.1)) !important;
 }
 
 .dv-table-selector {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 /* ==========================================================
    54. PAUSE OVERRIDE
    ========================================================== */
 #pause .pause-glitch {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 /* ==========================================================
@@ -2064,26 +1997,26 @@ a.inline-roll .dice-tooltip .dice-rolls .roll {
 }
 
 .netarch-level {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
   font-weight: bold !important;
 }
 
 .netarch-dv {
-  color: #ff8c00 !important;
+  color: var(--nv-accent-dim) !important;
 }
 
 .netarch-content {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
 }
 
 .netarch-actions a {
-  color: #ff8c00 !important;
+  color: var(--nv-accent-dim) !important;
 }
 
 .sub-list .sub-list-header {
-  background-color: #1a1a00 !important;
-  border-left: 3px solid #ffb000 !important;
-  color: #ffb000 !important;
+  background-color: var(--nv-bg-dark) !important;
+  border-left: 3px solid var(--nv-accent) !important;
+  color: var(--nv-accent) !important;
 }
 
 /* ==========================================================
@@ -2094,11 +2027,11 @@ a.inline-roll .dice-tooltip .dice-rolls .roll {
 }
 
 .active-effects-sheet .sheet-header {
-  border-bottom: 1px solid #332200 !important;
+  border-bottom: 1px solid var(--nv-border) !important;
 }
 
 .active-effects-sheet .tabs {
-  border-bottom: 1px solid #332200 !important;
+  border-bottom: 1px solid var(--nv-border) !important;
 }
 
 .active-effects-sheet .tab {
@@ -2116,26 +2049,26 @@ a.inline-roll .dice-tooltip .dice-rolls .roll {
 
 .change-key input {
   background: transparent !important;
-  border: 1px solid #332200 !important;
-  color: #ffb000 !important;
+  border: 1px solid var(--nv-border) !important;
+  color: var(--nv-accent) !important;
 }
 
 .change-value input {
   background: transparent !important;
-  border: 1px solid #332200 !important;
-  color: #ffb000 !important;
+  border: 1px solid var(--nv-border) !important;
+  color: var(--nv-accent) !important;
 }
 
 .change-mode select {
-  background: #0d0d0d !important;
-  border: 1px solid #332200 !important;
-  color: #ffb000 !important;
+  background: var(--nv-bg-input) !important;
+  border: 1px solid var(--nv-border) !important;
+  color: var(--nv-accent) !important;
 }
 
 .change-header {
   background: var(--nv-glass-deep) !important;
-  color: #ffb000 !important;
-  border-bottom: 1px solid #ffb000 !important;
+  color: var(--nv-accent) !important;
+  border-bottom: 1px solid var(--nv-accent) !important;
 }
 
 /* ==========================================================
@@ -2152,90 +2085,90 @@ a.inline-roll .dice-tooltip .dice-rolls .roll {
 .journal-page-content,
 .journal-sheet-container {
   font-family: "Tektur", monospace !important;
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .prosemirror h1,
 .editor-content h1,
 .prosemirror h2,
 .editor-content h2 {
-  border-bottom-color: #ffb000 !important;
-  color: #ffb000 !important;
+  border-bottom-color: var(--nv-accent) !important;
+  color: var(--nv-accent) !important;
 }
 
 .prosemirror h1::after,
 .editor-content h1::after,
 .prosemirror h2::after,
 .editor-content h2::after {
-  background-color: #ff8c00 !important;
+  background-color: var(--nv-accent-dim) !important;
 }
 
 .prosemirror h3::before,
 .editor-content h3::before,
 .prosemirror h4::before,
 .editor-content h4::before {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .prosemirror blockquote,
 .editor-content blockquote {
   background: #111100 !important;
-  border-left: 3px solid #ffb000 !important;
+  border-left: 3px solid var(--nv-accent) !important;
 }
 
 .prosemirror table tr:first-of-type,
 .editor-content table tr:first-of-type {
   background: var(--nv-glass-deep) !important;
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .prosemirror table td,
 .editor-content table td {
-  border-color: #332200 !important;
+  border-color: var(--nv-border) !important;
 }
 
 .prosemirror table tbody tr:nth-of-type(even):not(:first-of-type),
 .editor-content table tbody tr:nth-of-type(even):not(:first-of-type) {
   background: var(--nv-glass-mid) !important;
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .prosemirror table tbody tr:nth-of-type(odd):not(:first-of-type),
 .editor-content table tbody tr:nth-of-type(odd):not(:first-of-type) {
   background: var(--nv-glass-light) !important;
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 /* ==========================================================
    58. FILEPICKER
    ========================================================== */
 .filepicker .display-modes a {
-  background: #1a1a00 !important;
-  color: #554400 !important;
-  border: 1px solid #332200 !important;
+  background: var(--nv-bg-dark) !important;
+  color: var(--nv-text-dimmed) !important;
+  border: 1px solid var(--nv-border) !important;
 }
 
 .filepicker .display-modes a.active {
-  background: #332200 !important;
-  color: #ffb000 !important;
-  border-color: #ffb000 !important;
+  background: var(--nv-border) !important;
+  color: var(--nv-accent) !important;
+  border-color: var(--nv-accent) !important;
 }
 
 .filepicker .favorites .path {
-  background: #0d0d0d !important;
-  color: #ffb000 !important;
+  background: var(--nv-bg-input) !important;
+  color: var(--nv-accent) !important;
 }
 
 /* ==========================================================
    59. MODULE MANAGEMENT / KEYBINDINGS
    ========================================================== */
 #module-management label {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 #keybindings .binding .key.uneditable {
-  background: #0d0d0d !important;
-  color: #554400 !important;
+  background: var(--nv-bg-input) !important;
+  color: var(--nv-text-dimmed) !important;
 }
 
 /* ==========================================================
@@ -2252,7 +2185,7 @@ a.inline-roll .dice-tooltip .dice-rolls .roll {
   background-size: auto !important;
   background-position: initial !important;
   background-repeat: no-repeat !important;
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .fa-caret-right::before,
@@ -2266,11 +2199,11 @@ a.inline-roll .dice-tooltip .dice-rolls .roll {
    61. BUTTON ACTIVE / DISABLED STATES
    ========================================================== */
 .button-active {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .button-disabled {
-  color: #332200 !important;
+  color: var(--nv-border) !important;
   cursor: default !important;
 }
 
@@ -2279,11 +2212,11 @@ a.inline-roll .dice-tooltip .dice-rolls .roll {
 }
 
 .pinned {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .unpinned {
-  color: #332200 !important;
+  color: var(--nv-border) !important;
 }
 
 /* ==========================================================
@@ -2302,7 +2235,7 @@ a.inline-roll .dice-tooltip .dice-rolls .roll {
 #tables-popout,
 #macros-popout,
 #ui-right {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 #actors-popout button,
@@ -2318,9 +2251,9 @@ a.inline-roll .dice-tooltip .dice-rolls .roll {
 #tables-popout button,
 #macros-popout button,
 #ui-right button {
-  color: #ffb000 !important;
-  background-color: #1a1a00 !important;
-  border: 1px solid #ffb000 !important;
+  color: var(--nv-accent) !important;
+  background-color: var(--nv-bg-dark) !important;
+  border: 1px solid var(--nv-accent) !important;
 }
 
 /* ==========================================================
@@ -2329,12 +2262,12 @@ a.inline-roll .dice-tooltip .dice-rolls .roll {
 .notification-toast {
   background: var(--nv-glass-mid) !important;
   backdrop-filter: var(--nv-glass-blur) !important;
-  border: 1px solid #ffb000 !important;
-  color: #ffb000 !important;
+  border: 1px solid var(--nv-accent) !important;
+  color: var(--nv-accent) !important;
 }
 
 .notification-toast.info {
-  border-color: #ffb000 !important;
+  border-color: var(--nv-accent) !important;
 }
 
 .notification-toast.error {
@@ -2342,7 +2275,7 @@ a.inline-roll .dice-tooltip .dice-rolls .roll {
 }
 
 .notification-toast.warning {
-  border-color: #ff8c00 !important;
+  border-color: var(--nv-accent-dim) !important;
 }
 
 /* ==========================================================
@@ -2350,29 +2283,29 @@ a.inline-roll .dice-tooltip .dice-rolls .roll {
    ========================================================== */
 form .notes,
 form .hint {
-  color: #554400 !important;
+  color: var(--nv-text-dimmed) !important;
 }
 
 form .form-group label {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 form span.units {
-  color: #554400 !important;
+  color: var(--nv-text-dimmed) !important;
 }
 
 form .form-group.slim .form-fields label {
-  color: #554400 !important;
+  color: var(--nv-text-dimmed) !important;
 }
 
 form textarea:read-only {
-  color: #554400 !important;
+  color: var(--nv-text-dimmed) !important;
 }
 
 form textarea {
-  color: #ffb000 !important;
-  background: #0d0d0d !important;
-  border: 1px solid #332200 !important;
+  color: var(--nv-accent) !important;
+  background: var(--nv-bg-input) !important;
+  border: 1px solid var(--nv-border) !important;
 }
 
 /* ==========================================================
@@ -2381,27 +2314,27 @@ form textarea {
 .window-app .window-header {
   background: var(--nv-glass-deep) !important;
   backdrop-filter: var(--nv-glass-blur) !important;
-  border-bottom: 1px solid #ffb000 !important;
-  color: #ffb000 !important;
+  border-bottom: 1px solid var(--nv-accent) !important;
+  color: var(--nv-accent) !important;
 }
 
 .window-app .window-header .window-title {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .window-app .window-header a {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
 }
 
 .window-app .window-header a:hover {
-  color: #ffb000 !important;
-  text-shadow: 0 0 6px rgba(255, 176, 0, 0.3) !important;
+  color: var(--nv-accent) !important;
+  text-shadow: 0 0 6px var(--nv-glow-030, rgba(255, 176, 0, 0.3)) !important;
 }
 
 .window-app .window-content {
   background: var(--nv-glass-dark) !important;
   backdrop-filter: var(--nv-glass-blur) !important;
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 /* ==========================================================
@@ -2409,44 +2342,44 @@ form textarea {
    ========================================================== */
 .user-config .window-content .directory-list {
   background: var(--nv-glass-mid) !important;
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 code {
-  background-color: #1a1a00 !important;
-  color: #ffb000 !important;
+  background-color: var(--nv-bg-dark) !important;
+  color: var(--nv-accent) !important;
 }
 
 /* ==========================================================
    67. TABLE / ROLLTABLE
    ========================================================== */
 .table-description {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
 }
 
 /* ==========================================================
    68. ITEM CARD GRID (CHAT)
    ========================================================== */
 .item-card-grid-container {
-  border: 1px solid #1a1a00 !important;
+  border: 1px solid var(--nv-bg-dark) !important;
   background: var(--nv-glass-mid) !important;
 }
 
 .item-card-header {
-  border-bottom: 1px solid #1a1a00 !important;
+  border-bottom: 1px solid var(--nv-bg-dark) !important;
 }
 
 .item-card-name {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .item-card-type {
-  color: #554400 !important;
+  color: var(--nv-text-dimmed) !important;
   font-size: 0.7rem !important;
 }
 
 .item-card-description {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
   font-size: 0.75rem !important;
 }
 
@@ -2454,52 +2387,52 @@ code {
    69. MIGRATION UI
    ========================================================== */
 #cpr-migration {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 #cpr-migration .title {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 #cpr-migration .status {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
 }
 
 #cpr-migration .toggle {
-  background-color: #332200 !important;
+  background-color: var(--nv-border) !important;
 }
 
 #cpr-migration .toggle:before {
-  background-color: #ffb000 !important;
+  background-color: var(--nv-accent) !important;
 }
 
 #cpr-migration .toggle:checked {
-  background-color: #ffb000 !important;
+  background-color: var(--nv-accent) !important;
 }
 
 #cpr-migration .toggle:checked:before {
-  background-color: #000000 !important;
+  background-color: var(--nv-text-black) !important;
 }
 
 #cpr-migration form.compendia-selection .module-choices label {
-  border-color: #332200 !important;
-  color: #aa7700 !important;
+  border-color: var(--nv-border) !important;
+  color: var(--nv-text-hint) !important;
 }
 
 #cpr-migration form.compendia-selection .module-choices label:hover {
-  text-shadow: 0 0 6px rgba(255, 176, 0, 0.3) !important;
+  text-shadow: 0 0 6px var(--nv-glow-030, rgba(255, 176, 0, 0.3)) !important;
 }
 
 /* ==========================================================
    70. DICE TRAY
    ========================================================== */
 .dice-tray button {
-  color: #ff8c00 !important;
+  color: var(--nv-accent-dim) !important;
   background: transparent !important;
 }
 
 .dice-tray button:hover {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 /* ==========================================================
@@ -2518,7 +2451,7 @@ code {
 
 #chat-log .message.emote .message-content,
 #chat-log .message.cgmp-desc .message-content {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 /* ==========================================================
@@ -2534,13 +2467,13 @@ code {
 
 .item-piles-chat-card li:nth-child(odd) {
   background-color: var(--nv-glass-light) !important;
-  border-color: #332200 !important;
+  border-color: var(--nv-border) !important;
 }
 
 .item-piles-item-take-button {
-  background-color: #1a1a00 !important;
-  border: 1px solid #ffb000 !important;
-  color: #ffb000 !important;
+  background-color: var(--nv-bg-dark) !important;
+  border: 1px solid var(--nv-accent) !important;
+  color: var(--nv-accent) !important;
 }
 
 /* ==========================================================
@@ -2548,39 +2481,39 @@ code {
    ========================================================== */
 .monks-active-tiles div[data-tab="triggers"] .action-items .action-style,
 .monks-active-tiles div[data-tab="triggers"] .action-items .details-style {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .monks-active-tiles div[data-tab="triggers"] .action-items .entity-style {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
 }
 
 .monks-active-tiles .file-list .image-name {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .monks-active-tiles.sheet .items-list .item-name h4 {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
 }
 
 .monks-active-tiles.sheet .items-list .item-header {
-  background: #1a1a00 !important;
-  color: #ffb000 !important;
+  background: var(--nv-bg-dark) !important;
+  color: var(--nv-accent) !important;
 }
 
 .monks-active-tiles.sheet .items-list .item-controls a {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 /* --- Cyberpunk RED Importer dialog --- */
 .aolkin-cyberpunkred-importer {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
 }
 
 .dialog .character-import-code {
-  background: #0d0d0d !important;
-  color: #ffb000 !important;
-  border: 1px solid #ffb000 !important;
+  background: var(--nv-bg-input) !important;
+  color: var(--nv-accent) !important;
+  border: 1px solid var(--nv-accent) !important;
   font-family: "Tektur", monospace !important;
   width: 100% !important;
   box-sizing: border-box !important;
@@ -2592,7 +2525,7 @@ code {
 }
 
 .dialog .character-import-name {
-  color: #ffb000 !important;
+  color: var(--nv-accent) !important;
   font-weight: bold !important;
 }
 
@@ -2601,6 +2534,6 @@ code {
 }
 
 .dialog .character-import-message {
-  color: #aa7700 !important;
+  color: var(--nv-text-hint) !important;
   font-size: 0.85em !important;
 }
